@@ -1,0 +1,551 @@
+@charset "UTF-8";
+
+/*Tentativa de RESPONSIVIDADE*/
+/* Media queries para tornar o site responsivo */
+
+/* Dispositivos até 768px de largura */
+@media (max-width: 768px) {
+    div#interface {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    header#cabecalho img#icone {
+      left: 90%;
+    }
+  
+    nav#menu ul {
+      left: 40%;
+    }
+  
+    section#corpo {
+      width: 100%;
+    }
+  
+    article#noticia-principal div#jornadaInesquecivel img {
+      width: 100%;
+    }
+  
+    div#pai .pLadoALado {
+      flex: 0 0 calc(50% - 10px);
+    }
+  
+    aside#lateral div#aside-parte2 {
+      width: 100%;
+    }
+  }
+  
+  /* Dispositivos até 480px de largura */
+  @media (max-width: 480px) {
+    header#cabecalho img#icone {
+      left: 80%;
+    }
+  
+    nav#menu ul {
+      left: 30%;
+    }
+  
+    article#noticia-principal div#jornadaInesquecivel img {
+      width: 100%;
+    }
+  
+    div#pai .pLadoALado {
+      flex: 0 0 100%;
+    }
+  }
+  /*Tentativa de RESPONSIVIDADE*/
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(205, 203, 203);
+    color: rgb(36, 31, 77);
+}
+
+div#interface {
+    width: 1100px;
+    background-color: #ffffff;
+    margin: -20px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Àrea do cabeçalho*/
+header#cabecalho span.bi-blue {
+    color: rgb(0, 157, 255);
+}
+
+header#cabecalho span.na-orange {
+    color: rgb(255, 136, 0);
+}
+
+header#cabecalho span.tur-red {
+    color: rgb(213, 2, 2);
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1000px;
+    top: 35px;
+}
+
+header#cabecalho img#logoMarca {
+    position: absolute;
+    top: 30px;
+
+}
+
+/*Área azul do cabeçalho*/
+header#cabecalho {
+    height: 150px;
+    background-image: url("_2.FundoHome.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px 1px 1px 1px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+
+}
+
+header#cabecalho h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36pt;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    padding: 0px 0px 0px 130px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    color: #ffffff;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, .6);
+    padding: 0px 0px 0px 130px;
+    margin-top: 0px;
+}
+
+/*Menu do cabeçalho*/
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 695px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #03afe3;
+    padding: 6px;
+    margin: 2px;
+    transition: background-color 1s;
+    border-radius: 10%;
+}
+
+nav#menu li:hover {
+    background-color: rgba(12, 176, 201, 0.6);
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, .6);
+}
+
+nav#menu a:hover {
+    /*OK*/
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* FIM - Menu do cabeçalho*/
+/* FIM - Àrea do cabeçalho*/
+
+/*Conteúdo principa da ESQUERDA*/
+section#corpo {
+    display: block;
+    width: 700px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+/*As melhores condções para sua viagem*/
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo';
+    font-size: 18pt;
+    color: rgba(0, 0, 0, 0.614);
+    text-shadow: 1px 1px 1px rgba(5, 46, 152, 0.6);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+
+header#cabecalho-artigo p {  /*Num só lugar*/
+    font-size: 13pt;
+    color: #606060;
+    text-indent: 0;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, .6);
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 { /*Viagens > Férias > Promoções*/
+    font-size: 12px;
+    color: #606060;
+}
+
+header#cabecalho-artigo h4{ /*link cadastro*/
+    color: #606060;
+    float: right;
+    position: relative;
+    margin-top: -50px;
+}
+
+header#cabecalho-artigo img {
+    float: right;
+    margin-right: 110px;
+    position: relative;
+    margin-top: -80px;
+}
+
+article#noticia-principal h2 { /*Tudo o que for h2 da esquerda*/
+    font-size: 13pt;
+    color: #000000;
+    background-color: rgba(12, 176, 201, 0.8);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+article#noticia-principal div#jornadaInesquecivel h3 {
+    font-size: 11pt;
+    color: #606060;
+}
+
+article#noticia-principal div#jornadaInesquecivel img {
+    width: 700px;
+    height: 170px;
+    border-radius: 10px;
+    border: 1px solid #606060;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+}
+
+article#noticia-principal div#jornadaInesquecivel p#alone {
+    font-size: 15pt;
+    color: rgba(0, 0, 0, 0.614);
+    text-shadow: 1px 1px 1px rgba(5, 46, 152, 0.6);
+}
+
+.pLadoALado {
+    font-size: 10pt;
+    display: inline-block;
+    margin: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    border-radius: 3px;
+    background-color: #ffffff;
+    width: 210px;
+    padding: 6px;
+    margin-top: 15px;
+    vertical-align: top;
+}
+
+article#noticia-principal div#fundoLadoALado {
+    background-color: #ccc7c7;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.381);
+    border-radius: 3px;
+    margin-top: -10px;
+    margin-bottom: 3px;
+}
+
+article#noticia-principal div#jornadaInesquecivel p {
+    text-indent: 0px;
+    font-weight: bold;
+}
+
+article#noticia-principal div#jornadaInesquecivel h3 {
+    color: #808080;
+    font-size: 13.5pt;
+    text-align: left;
+    text-shadow: .2px .2px .2px rgba(0, 0, 0, .6);
+}
+/* FIM - 1º tópico - descubra o mundo com a BINATUR*/
+
+/*2º tópico - Ofertas que não podem esperar*/
+
+div#pai {
+   
+}
+
+div#pai h3{
+    text-align: justify;
+    color: #808080;
+    font-size: 13.5pt;
+    text-align: left;
+    text-shadow: .3px .3px .3px rgba(0, 0, 0, .6);
+}
+
+/* testando um carousel2*/
+.slide2 img {
+    border-radius: 5px;
+    position: relative;
+    width: 650px;
+    height: 150px;
+    border: 1px solid #ffffff;
+    box-shadow: 5px 5px 5px rgba(2, 217, 250, 0.6);
+    border: 2px dashed #000000;
+    margin-left: 30px;
+}
+
+.active {
+    /*.active é utilizada para determinar qual slide (imagem) do carrossel deve ser exibido*/
+    display: block;
+    /*Quando um slide recebe essa classe, ele terá a propriedade display definida como block, 
+                      o que fará com que esse slide seja exibido no carrossel.*/
+}
+/* testando um carousel2*/
+
+div#pai img#imgCards{ 
+    margin-bottom: -30px;
+}
+
+div#pai p#pagamento{
+    font-size: 13pt;
+    color: #606060;
+    text-indent: 0;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, .6);
+    margin-bottom: 0px;
+}
+
+/* testando um carousel*/
+aside#lateral div.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 200px;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.active {
+    /*.active é utilizada para determinar qual slide (imagem) do carrossel deve ser exibido*/
+    display: block;
+    /*Quando um slide recebe essa classe, ele terá a propriedade display definida como block, 
+                      o que fará com que esse slide seja exibido no carrossel.*/
+}
+/* FIM - testando um carousel*/
+/* FIM - 2º tópico - Ofertas que não podem esperar*/
+/* FIM - Conteúdo principa da ESQUERDA*/
+
+/* ASIDE (Conteúdo lateral da DIREITA)*/
+aside#lateral div#aside-parte1{
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #ccc7c7;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    margin-bottom: 20px;
+}
+
+aside#lateral div#aside-parte1 h1 {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral div#aside-parte1 h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+aside#lateral div#aside-parte1 p {
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+/*ASIDE-2*/ 
+aside#lateral div#aside-parte2 {
+    position: absolute;
+    background-color: rgba(2, 217, 250, 0.6);
+    width: 370px;
+    margin-top: 950px;
+    margin-left: 730px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(5, 150, 172, 0.834);
+}
+
+aside#lateral div#aside-parte2 h3 {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-right: 45px;
+    
+  }
+
+  aside#lateral div#aside-parte2 h6 {
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-right: 50px;
+  }
+  
+  aside#lateral div#aside-parte2 form {
+    display: flex;
+    align-items: center;
+  }
+
+  aside#lateral div#aside-parte2 form input::placeholder {
+    font-style: italic;
+  }
+  
+  aside#lateral div#aside-parte2 input#email {
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+  }
+
+  aside#lateral div#aside-parte2 input#enviar {
+    padding: 8px;
+    border: 1.5px solid #0269f8;
+    color: #0460e1;
+    border-radius: 20px;
+    margin: 10px 5px 10px 5px ;
+    margin-top: 0px;
+    font-weight: bold;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgba(2, 78, 177, 0.5);
+  }
+  
+  input[type="email"] {
+    flex: 1;
+  }
+  
+  aside#lateral div#aside-parte2 a {
+    color: #007bff;
+    text-decoration: none;
+  }
+/*FIM - ASIDE-2*/
+
+/* ASIDE-3*/
+
+aside#lateral div#aside-parte3 h2 {
+   position: absolute;
+   margin-top: 175px;
+   margin-left: 810px;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+
+aside#lateral div#aside-parte3 h6 {
+    position: absolute;
+    font-style: bold;
+    margin-top: 160px;
+    margin-left: 810px;
+}
+
+aside#lateral div#aside-parte3 img#celular {
+    position: relative;
+    height: 120px;
+    margin-top: 150px;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(2, 78, 177, 0.5);
+}
+
+aside#lateral div#aside-parte3 a#android {
+    position: absolute;
+    margin-top: 216px;
+    margin-left: 10px;
+}
+
+aside#lateral div#aside-parte3 a#aple {
+    position: absolute; 
+    margin-left: 160px;
+    margin-top: 215px;
+}
+
+/* FIM - ASIDE-3*/
+/* FIM - ASIDE (Conteúdo lateral da DIREITA)*/
+
+/*Rodapé*/
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+    text-indent: 0%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+footer#rodape p#endereco {
+    text-align: center;
+    text-indent: 0%;
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: -8px;
+}
+
+.imgGroup {
+    text-align: center;
+}
+
+footer#rodape img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: -5px; 
+}
+
+footer#rodape img:hover {
+    background-color:  #606060;
+    border-radius: 25px;
+    transition: background-color 1s; 
+}
+/* FIM - Rodapé*/
