@@ -53,7 +53,7 @@
       flex: 0 0 100%;
     }
   }
-  /*Tentativa de RESPONSIVIDADE*/
+  /*FIM - Tentativa de RESPONSIVIDADE==================================================================================================*/
   
 body {
     font-family: Arial, sans-serif;
@@ -111,7 +111,7 @@ header#cabecalho img#logoMarca {
 /*Área azul do cabeçalho*/
 header#cabecalho {
     height: 150px;
-    background-image: url("_2.FundoHome.png");
+    background-image: url("../_imagens/_2.FundoHome.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;

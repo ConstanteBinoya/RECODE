@@ -8,192 +8,12 @@
     <meta name="description" content="Conheça a Binatur, a agência de viagens brasileira que transforma sonhos em realidade! 
     Explore destinos nacionais e internacionais com conforto, qualidade e excelência em todos os aspectos. Descubra o mundo e 
     viva experiências inesquecíveis com a Binatur."> <!--SEO-->
-    <link rel="stylesheet" type="text/CSS" href="A.estilo.css">
-    <style>
-        /*Tentativa de RESPONSIVIDADE*/
-        /* Media queries para tornar o site responsivo */
-
-        /* Dispositivos até 768px de largura */
-        @media (max-width: 768px) {
-            div#interface {
-                width: 100%;
-                padding: 10px;
-            }
-
-            header#cabecalho img#icone {
-                left: 90%;
-            }
-
-            nav#menu ul {
-                left: 40%;
-            }
-
-            section#corpo {
-                width: 100%;
-            }
-
-            article#noticia-principal div#jornadaInesquecivel img {
-                width: 100%;
-            }
-
-            div#pai .pLadoALado {
-                flex: 0 0 calc(50% - 10px);
-            }
-
-            aside#lateral div#aside-parte2 {
-                width: 100%;
-            }
-        }
-
-        /* Dispositivos até 480px de largura */
-        @media (max-width: 480px) {
-            header#cabecalho img#icone {
-                left: 80%;
-            }
-
-            nav#menu ul {
-                left: 30%;
-            }
-
-            article#noticia-principal div#jornadaInesquecivel img {
-                width: 100%;
-            }
-
-            div#pai .pLadoALado {
-                flex: 0 0 100%;
-            }
-        }
-
-        /*Tentativa de RESPONSIVIDADE*/
-
-
-        body h1#escolhaDestino {
-            color: #333;
-            font-size: 38px;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
-            margin-top: 3px;
-            margin-bottom: 50px;
-        }
-
-        p#saudacao {
-            text-indent: 0;
-            color: #606060;
-            font-size: 13.5pt;
-            text-shadow: .3px .3px .3px rgba(0, 0, 0, .6);
-        }
-
-        body div#faixaColor {
-            background-color: rgb(15, 160, 160);
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
-            height: 200px;
-            margin-left: -10px;
-            margin-right: -10px;
-            margin-bottom: 50px;
-        }
-
-        form {
-            position: absolute;
-            display: flex;
-            /* justify-content: center;*/
-            align-items: center;
-            background-color: rgb(73, 209, 164);
-            padding: 10px;
-            margin: 5px;
-            border-radius: 10px;
-            margin-left: 20px;
-            margin-top: 60px;
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
-
-        }
-
-        label {
-            width: 120px;
-            text-align: right;
-            margin-right: 10px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="date"] {
-            width: 200px;
-            height: 50px;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-
-        input[type="button"] {
-            width: 60px;
-            padding: 8px;
-            color: #797676;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        input[type="submit"] {
-            width: 100px;
-            height: 50px;
-            padding: 8px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-
-
-
-        #carousel-container {
-            width: 500px;
-            height: 300px;
-            margin: 0 auto;
-            overflow: hidden;
-            position: relative;
-            border-radius: 20px;
-            border: 1px solid #000000;
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
-        }
-
-        #carousel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 500px;
-        }
-
-        .carousel-item {
-            width: 500px;
-            height: 300px;
-            margin-right: 0px;
-            border: 2px solid #333;
-
-        }
-
-        .carousel-item:last-child {
-            margin-right: 0;
-            /* Remover espaço à direita da última imagem */
-        }
-
-        .carousel-controls {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .carousel-controls button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            margin: 0 5px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    </style>
-
+    <link rel="stylesheet" type="text/CSS" href="../_css/A.estilo.css">
+    <link rel="stylesheet" type="text/CSS" href="../_css/C.destino.css">
 </head>
 
-<script language="javascript" src="_A.funcoes.js"></script>
+<script language="javascript" src="../_js/_A.funcoes.js"></script>
+<script language="javascript" src="../_js/_B.destino.js"></script>
 
 <body>
     <div id="interface">
@@ -205,26 +25,31 @@
                 <h2>A sua agência de Viagens - INTELIGENTE</h2>
             </hgroup>
 
-            <img id="logoMarca" src="_1.logoBinaTur.png" alt="Logo Marca da Bina-Tur" />
+            <img id="logoMarca" src="../_imagens/_1.logoBinaTur.png" alt="Logo Marca da Bina-Tur" />
 
-            <img id="icone" src="_5.destinoLogo.png" alt="Ícone da home" />
+            <img id="icone" src="../_imagens/_5.destinoLogo.png" alt="Ícone da home" />
 
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li onmouseover="mudaFoto('_4.home.png')" onmouseout="mudaFoto('_5.destinoLogo.png')">
-                        <a href="1.index.html">Home</a>
+                    <li onmouseover="mudaFoto('../_imagens/_4.home.png')"
+                        onmouseout="mudaFoto('../_imagens/_5.destinoLogo.png')">
+                        <a href="../1.index.html">Home</a>
                     </li>
-                    <li onmouseover="mudaFoto('_5.destinoLogo.png')" onmouseout="mudaFoto('_5.destinoLogo.png')">
+                    <li onmouseover="mudaFoto('../_imagens/_5.destinoLogo.png')"
+                        onmouseout="mudaFoto('../_imagens/_5.destinoLogo.png')">
                         <a href="3.destino.html">Destino</a>
                     </li>
-                    <li onmouseover="mudaFoto('_6.promocoes.png')" onmouseout="mudaFoto('_5.destinoLogo.png')">
+                    <li onmouseover="mudaFoto('../_imagens/_6.promocoes.png')"
+                        onmouseout="mudaFoto('../_imagens/_5.destinoLogo.png')">
                         <a href="4.promocoes.html">Promoções</a>
                     </li>
-                    <li onmouseover="mudaFoto('_7.multimidia.png')" onmouseout="mudaFoto('_5.destinoLogo.png')">
+                    <li onmouseover="mudaFoto('../_imagens/_7.multimidia.png')"
+                        onmouseout="mudaFoto('../_imagens/_5.destinoLogo.png')">
                         <a href="5.multmidia.html">Multimídia</a>
                     </li>
-                    <li onmouseover="mudaFoto('_8.contato.png')" onmouseout="mudaFoto('_5.destinoLogo.png')">
+                    <li onmouseover="mudaFoto('../_imagens/_8.contato.png')"
+                        onmouseout="mudaFoto('../_imagens/_5.destinoLogo.png')">
                         <a href="6.faleConosco.html">Fale conosco</a>
                     </li>
                 </ul>
@@ -262,13 +87,13 @@
         <div id="carousel-container">
             <div id="carousel">
                 <div class="carousel-item">
-                    <img src="_30.recife.png" alt="Imagem de Salvador - BA">
+                    <img src="../_imagens/_30.recife.png" alt="Imagem de Salvador - BA">
                 </div>
                 <div class="carousel-item">
-                    <img src="_31.galinhas.png" alt="Imagem de Porto de Galinhas - PE">
+                    <img src="../_imagens/_31.galinhas.png" alt="Imagem de Porto de Galinhas - PE">
                 </div>
                 <div class="carousel-item">
-                    <img src="_32.fortaleza.png" alt="Imagem Fortaleza - CE">
+                    <img src="../_imagens/_32.fortaleza.png" alt="Imagem Fortaleza - CE">
                 </div>
             </div>
         </div>
@@ -281,55 +106,19 @@
         <!--teste carrousel com seta-->
 
         <footer id="rodape">
-            <p>Copyright 2023 - by Constante Binoya <br /></p>
+            <p>Copyright 2023 - by Constante Binoya <br/></p>
             <div class="imgGroup">
-                <a href="7.siteEmConstrucao.html"><img src="_16.facebook.png"></a>
-                <a href="7.siteEmConstrucao.html"><img src="_17.instagram.png"></a>
-                <a href="7.siteEmConstrucao.html"><img src="_18.twiter.png"></a>
-                <a href="7.siteEmConstrucao.html"><img src="_19.youtobe.png"></a>
-                <a href="7.siteEmConstrucao.html"><img src="_20.pinterest.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_16.facebook.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_17.instagram.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_18.twiter.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_19.youtobe.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_20.pinterest.png"></a>
             </div>
             <p id="endereco">BINATUR Brasil Operadora e Agência de Viagens S.A - CNPJ: 27.701.521/0001-22 Rua Walfrido
                 Lins de Moraes, 387, 2º andar, sala 209 | Bairro Janga, Paulista - PE CEP: 53437-100</p>
         </footer>
+        
     </div>
-
-    <script>
-
-        // inverterPartidaDestino: para inverter valores no menpu destino
-        function inverterPartidaDestino() {
-            const partida = document.getElementById("localPartida").value;
-            const destino = document.getElementById("localDestino").value;
-            document.getElementById("localPartida").value = destino;
-            document.getElementById("localDestino").value = partida;
-        }
-        // FIM - inverterPartidaDestino: para inverter valores no menpu destino
-
-        // carousel com opção de IR E VOLTAR clicando
-        const carousel = document.getElementById('carousel');
-        let currentIndex = 0;
-
-        function nextSlide() {
-            currentIndex++;
-            if (currentIndex >= carousel.children.length) {
-                currentIndex = 0;
-            }
-            updateCarousel();
-        }
-
-        function prevSlide() {
-            currentIndex--;
-            if (currentIndex < 0) {
-                currentIndex = carousel.children.length - 1;
-            }
-            updateCarousel();
-        }
-
-        function updateCarousel() {
-            carousel.style.transform = `translateX(-${currentIndex * 500}px)`;
-        }
-        // FIM - carousel com opção de IR E VOLTAR clicando
-    </script>
 
 </body>
 
