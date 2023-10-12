@@ -1,0 +1,213 @@
+Algoritmo "Viagens_RECODE"
+
+//EXERCÍCIO:
+   //Usando conceitos de programação estruturada (Vetor), criar em pseudocódigo um menu para
+   //simular um cadastro para uma agência de viagens com as seguintes funções:
+      //Cadastro de cliente;
+      //Cadastro de destino;
+      //Consulta para cada estrutura de dados.
+      
+ //PRINCIPAI DESAFIOS:
+    // Enxugar o código (sei que conseguiria apresentar um código mais enxuto, entretanto,
+    // com o prazo acabando e as aulas fluindo com novos assuntos - por hora - ficou inviável
+    // prolongar a entrega;
+    
+    // Não consegui integrar - de forma lógica - a compilação de dados de cadastro de clientes
+    // com as de cadastro de viagens, para que ambas compusessem o mesmo índice no ato da consulta.
+    // Para tanto a consulta deve ser realizada de forma individual: cadastro de clientes ou viagens.
+    
+    //Identação: ainda me confundo com os níveis e sub-níveis de identação, mesmo utilizando o
+    //"CLTR + G" aindaadicionei algumas linhas com o uso do enter para dividir o blocos e
+    //melhorar a minha visualização, isso contribuiu para o aumento do código.
+
+Var
+   clientesNome: vetor[1..1000] de caractere      //Bloco de vetores que comportam os dados do menú
+   clientesIdade: vetor[1..1000] de inteiro       //cadastro de clientes
+   clientesCPF: vetor[1..1000] de inteiro
+   clientesTelefone: vetor[1..1000] de inteiro
+   totalClientes: inteiro
+
+   destinosPaisEmbarque: vetor[1..1000] de caractere     //Bloco de vetores que comportam os dados
+   destinosCidadeEmbarque: vetor[1..1000] de caractere   //do menú cadastro de destinos
+   destinosPaisDestino: vetor[1..1000] de caractere
+   destinosCidadeDestino: vetor[1..1000] de caractere
+   totalDestinos: inteiro
+
+   opcao: inteiro    //Variavél que capta a escolha, do usuário, no menú principal
+   
+
+Procedimento CadastroCliente  //Optei por inserir blocos de Procedimento pata diminuir o código
+
+var
+   nomeCliente: caractere
+   idadeCliente, cpfCliente, telefoneCliente: inteiro
+   
+Inicio
+
+   Escreval("   ---------------------------") //Algumas linhas de código cumprem o papel de estilizar
+   Escreval("   ==== Faça seu Cadastro ====") //o programa numa tentativa de aplicar estratégeas de SEO.
+   Escreval("   ---------------------------")
+   Escreval("Digite seu Nome Completo: ")
+   Leia(nomeCliente)
+   Escreval("Digite sua Idade: ")
+   Leia(idadeCliente)
+   Escreval("Digite seu CPF: ")
+   Leia(cpfCliente)
+   Escreval("Digite seu Telefone para Contato: ")
+   Leia(telefoneCliente)
+   limpatela
+
+   totalClientes <- (totalClientes + 1)
+   
+   clientesNome[totalClientes] <- nomeCliente
+   clientesIdade[totalClientes] <- idadeCliente
+   clientesCPF[totalClientes] <- cpfCliente
+   clientesTelefone[totalClientes] <- telefoneCliente
+   
+   Saudacao()
+   Escreval("||Cliente Cadastrado com Sucesso!||")
+   Escreval("||Código para consulta: ", totalClientes,"       ||")
+   
+FimProcedimento
+
+
+Procedimento CadastroDestino
+var
+   paisEmbarque, cidadeEmbarque, paisDestino, cidadeDestino: caractere
+   
+Inicio
+   Escreval("   ------------------------- ")
+   Escreval("  === Cadastre seu Destino ===")
+   Escreval("   ------------------------- ")
+   Escreval("Digite o Pais de Embarque: ")
+   Leia(paisEmbarque)
+   Escreval("Digite a Cidade de Embarque: ")
+   Leia(cidadeEmbarque)
+   Escreval("Digite o Pais de Destino: ")
+   Leia(paisDestino)
+   Escreval("Digite a Cidade de Destino: ")
+   Leia(cidadeDestino)
+   limpatela
+
+   totalDestinos <- (totalDestinos + 1)
+   
+   destinosPaisEmbarque[totalDestinos] <- paisEmbarque
+   destinosCidadeEmbarque[totalDestinos] <- cidadeEmbarque
+   destinosPaisDestino[totalDestinos] <- paisDestino
+   destinosCidadeDestino[totalDestinos] <- cidadeDestino
+   
+   Saudacao()
+   Escreval("||Destino Cadastrado com Sucesso!||")
+   Escreval("||Código para Consulta: ", totalDestinos, "       ||")
+   
+FimProcedimento
+
+
+Procedimento ConsultaCliente
+var
+   indice: inteiro
+   
+Inicio
+   Escreval("  -----------------------------")
+   Escreval("== Digite o Código do Cliente: == ")
+   Escreval("  -----------------------------")
+   Leia(indice)
+   Limpatela
+   Saudacao()
+   Se ((indice >= 1) e (indice <= totalClientes)) entao
+      Escreval("      --- Dados do Cliente ---")
+      Escreval("-----------------------------------")
+      Escreval("Nome: ", clientesNome[indice])
+      Escreval("Idade: ", clientesIdade[indice])
+      Escreval("CPF: ", clientesCPF[indice])
+      Escreval("Telefone: ", clientesTelefone[indice])
+   Senao
+      Escreval("Índice inválido. Cliente não encontrado.")
+   Fimse
+FimProcedimento
+
+
+Procedimento ConsultaDestino
+var
+   indice: inteiro
+Inicio
+   Escreval("  -----------------------------")
+   Escreval("== Digite o Código da Viagem:  ==")
+   Escreval("  -----------------------------")
+   Leia(indice)
+   Limpatela
+   Saudacao()
+   Se ((indice >= 1) e (indice <= totalDestinos)) entao
+      Escreval("      --- Dados do Destino ---")
+      Escreval("-----------------------------------")
+      Escreval("País de Embarque: ", destinosPaisEmbarque[indice])
+      Escreval("Cidade de Embarque: ", destinosCidadeEmbarque[indice])
+      Escreval("País de Destino: ", destinosPaisDestino[indice])
+      Escreval("Cidade de Destino: ", destinosCidadeDestino[indice])
+   Senao
+      Escreval("Código inválido. Destino não encontrado.")
+   Fimse
+FimProcedimento
+
+
+Procedimento Saudacao
+Inicio
+   Escreval("===================================")
+   Escreval("             BINA-TUR!")
+   Escreval("-----------------------------------")
+   Escreval(" Sua agência de Viagens Inteligente")
+   Escreval("===================================")
+FimProcedimento
+
+
+Inicio
+
+   totalClientes <- 0
+   totalDestinos <- 0
+   
+   Escreval("===================================")
+   Escreval("       Bem-vindo à BINA-TUR!")
+   Escreval("-----------------------------------")
+   Escreval(" Sua agência de Viagens Inteligente")
+   Escreval("===================================")
+   Repita
+      Escreval("-----------------------------------")
+      Escreval("|            -- Menu --           |")
+      Escreval("|---------------------------------|")
+      Escreval("|     1 - Cadastro de Cliente     |")
+      Escreval("|     2 - Cadastro de Destino     |")
+      Escreval("|     3 - Consulta de Cliente     |")
+      Escreval("|     4 - Consulta de Destino     |")
+      Escreval("|     0 - Sair                    |")
+      Escreval("-----------------------------------")
+      Escreval("     == Escolha uma opção ==")
+      Leia(opcao)
+      limpatela
+      
+      //A opção pela condicional "ESCOLHA" foi feita após perceber
+      //que o código estava muito grande com o "SE / SENAO / ENTAO.
+         Escolha (opcao)
+            Caso 1
+               CadastroCliente()
+            Caso 2
+               CadastroDestino()
+            Caso 3
+               ConsultaCliente()
+            Caso 4
+               ConsultaDestino()
+            Caso 0
+               saudacao()
+               Escreval("")
+               Escreval("Obrigado por utilizar nosso sistema.")
+               Escreval("             Até logo!")
+               Escreval("===================================")
+            OutroCaso
+               Escreval("###################################")
+               Escreval("# OPÇÃO INVÁLIDA. TENTE NOVAMENTE.#")
+               Escreval("###################################")
+               Escreval("")
+               
+         FimEscolha
+         
+   Ate (opcao = 0)
+Fimalgoritmo
