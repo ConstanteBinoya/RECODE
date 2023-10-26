@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+/*Área do navbar: ====================================================================================================================*/
+#cabecalhoSup {
+    width: 100%;
+    background-color: #ffffff;
+    border: solid 1px #cac2c2c9;
+    position: fixed;
+    /*A propriedade position: fixed; tornará a barra de navegação fixa no topo da página.*/
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 1000;
+    /*A propriedade z-index é usada para controlar a ordem de empilhamento, certificando-se de que a barra de navegação esteja acima de outros elementos na página. O top: 0;, left: 0; e right: 0; definem a posição exata no topo da página.*/
+}
+
+#cabecalhoSup li {
+    font-weight: bold;
+}
+
+#cabecalhoSup a.dropdown-item {
+    text-decoration: #000000;
+}
+
+/*Fim - Área do navbar: ==============================================================================================================*/
+
+/*Barra das tags de serviços:*/
+#tagServico  {
+    border: solid 1px #cac2c2c9;
+    margin-top: 50px;
+    padding: 4px;
+}
+
+#tagServico a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    color: #080808;
+}
+
+/*Fim - Barra das tags de serviços*/
+/*==================================================================================================================================*/
+
+/*Alert de "FAÇA SEU CADASTRO JÁ!":*/
+.alert-custom {
+    background-color: #2970f5;
+    border-color: #c5c2c2c0;
+    height: 60px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 1px;
+    width: 100%;
+}
+
+.text-custom {
+    margin-top: -5px;
+    margin-left: 150px;
+    color: #ffffff;
+}
+
+.text-custom strong {
+    font-size: 15pt;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, .6);
+}
+
+#alerta a {
+    color: #ffffff;
+}
+
+/*Fim - Alert de "FAÇA SEU CADASTRO JÁ!".*/
+/*==================================================================================================================================*/
+
+/*Barra de pacotes:*/
+#pacoteNavebar {
+    position: absolute;
+    width: 95%;
+    margin: 50px 0px 0px 30px;
+    padding: 10px 3px 30px 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+#pacoteNavebar h3 {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #444444;
+}
+
+.label-with-image#localPartida {
+    background-image: url('../_img/aviaoForm.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    background-position: center left;
+}
+
+.label-with-image#localDestino {
+    background-image: url('../_img/tagForm.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    background-position: center left;
+}
+
+.label-with-image#quantidadeQuartos {
+    background-image: url('../_img/quartoForm.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    background-position: center left;
+}
+
+.label-with-image#quantidadeHospedes {
+    background-image: url('../_img/pessoasForm.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    background-position: center left;
+}
+
+#buttonPac {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    font-size: 23px; 
+    font-weight: bold;
+    padding: 10px;
+    margin-top: -15px;
+}
+
+/*Fim - Barra de pacotes.*/
+/*==================================================================================================================================*/
+
+/*Banner da Home:*/
+#bannerHome {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#bannerHome img {
+    width: 102%;
+    height: 350px;
+    margin-left: -15px;
+}
+
+/*Fim - Banner da Home.*/
+/*==================================================================================================================================*/
+
+/*Alert Bina-Club:*/
+#alertaClub .alert-custom {
+    background-image: url('../_img/alertaClub.png');
+    border-color: #c5c2c2c0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+    height: 70px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 35px ;
+    width: 95%;
+}
+
+#alertaClub .text-custom {
+    margin-top: -5px;
+    margin-left: 100px;
+    color: #ffffff;
+}
+
+#alertaClub .text-custom strong {
+    font-size: 20pt;
+}
+
+#alertaClub p {
+    font-size: 15pt;
+}
+
+#alertaClub img {
+    height: 60px;
+    margin-top: -7px;
+}
+
+#alertaClub #buttonClub {
+    background-color: #fa1c41;
+    color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    font-size: 20px; 
+    font-weight: bold;
+    padding: 5px ;
+    border-radius: 35px;
+    margin-top: -30px;
+    margin-right: 120px;
+    width: 200px;
+    height: 45px;
+}
+/*Fim - Alert Bina-Club.*/
+/*==================================================================================================================================*/
+
+/*Breadcrumb da Section Promoções:*/
+section#promocoes #breadPromo {
+    position: relative;
+    margin-top: 180px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+/*Fim - Breadcrumb da Section Promoções:*/
+/*==================================================================================================================================*/
+
+/*Logo com slogan:*/
+#logoSloganAzul img {
+    position: relative; 
+    width: 250px;
+    height: 150px;
+    margin-top: -70px; 
+    margin-left: 560px; 
+}
+/*Fim - BLogo com slogan.*/
+/*==================================================================================================================================*/
+
+/*Título da parte secundária (BinaTur - Agência de viagens):*/
+#agenciaViagem {
+    position: relative;
+    margin-top: 0px;
+}
+
+#agenciaViagem h1{
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #444444;
+}
+
+#agenciaViagem p{
+    font-size: 10.5pt;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #444444;
+    margin-top: 25px;
+}
+/*Título da parte secundária (BinaTur - Agência de viagens).*/
+/*==================================================================================================================================*/
+
+/*Alert datas comemorativas:*/
+#alertaPromoSazonal .alert-custom {
+    background-image: url('../_img/alertaPromo.png');
+    border-color: #c5c2c2c0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+    height: 70px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#alertaPromoSazonal .text-custom {
+    color: #ffffff;
+}
+
+#alertaPromoSazonal .text-custom strong {
+    font-size: 20pt;
+    margin-left: -60px;
+}
+
+#alertaPromoSazonal p {
+    font-size: 15pt;
+}
+
+#alertaPromoSazonal img {
+    height: 60px;
+    margin-top: -7px;
+}
+
+#alertaPromoSazonal #buttonPromo {
+    background-color: #fa1c1c;
+    color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    font-size: 20px;  
+    padding: 5px ;
+    border-radius: 35px;
+    margin-top: -30px;
+    margin-right: 10px;
+    width: 150px;
+    height: 45px;
+}
+/*Fim - Alert datas comemorativas.*/
+/*==================================================================================================================================*/
+
+/*Cabeçalho da área de descontos:*/
+#destinosDesconto {
+    margin-top: 150px;
+}
+/*Fim - Cabeçalho da área de descontos*/
+/*==================================================================================================================================*/
+
+.ladoALado {
+    display: inline-block;
+    
+}
+
+.custom-card {
+    width: 290px; 
+    height: 300px;
+    position: relative;
+    background-color: #000; /* Cor de fundo da imagem escurecida */
+    color: #fff; /* Cor do texto */
+    overflow: hidden; /* Oculta conteúdo que extrapola o cartão */
+    transition: transform 0.3s; /* Adiciona uma transição suave no efeito de zoom */
+    margin: 15px;
+    border-radius: 20px;
+    margin-left: 25px ;
+    
+}
+
+.custom-card:hover {
+    transform: scale(1.09); /* Efeito de zoom no hover */
+}
+
+.card-img {
+   
+    opacity: 0.5; /* Opacidade da imagem (ajuste conforme necessário) */
+    width: 110%;
+    height: 100%;
+    margin-left: -12px;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn-outline-light {
+    background-color: transparent; /* Cor de fundo transparente */
+    border-color: #fff; /* Cor da borda do botão no estado normal */
+    color: #fff; /* Cor do texto do botão no estado normal */
+}
+
+.btn-outline-light:hover {
+    background-color: #fff; /* Cor de fundo do botão no hover */
+    color: #000; /* Cor do texto do botão no hover */
+}
+

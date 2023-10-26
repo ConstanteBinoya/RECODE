@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conheça a Binatur, a agência de viagens brasileira, que transforma sonhos em realidade! 
+    Explore destinos nacionais e internacionais com conforto, qualidade e excelência em todos os aspectos. Descubra o mundo e 
+    viva experiências inesquecíveis com a Binatur."> <!--SEO-->
+    <title>BinaTur | Viagens | Agência de Viagens</title>
+
+    <!--Integrando o BOOTSTRAP ao projeto (https://getbootstrap.com/):===============================================================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--FUNÇAÕ:
+         Esta linha de código vincula a folha de estilo (arquivo CSS) do Bootstrap à sua página HTML. O Bootstrap é uma estrutura CSS que fornece estilos predefinidos para vários componentes da interface do usuário. -->
+
+    <!--NECESSIDADE: 
+        É fundamental incluir o arquivo CSS do Bootstrap para que todos os componentes do Bootstrap, como botões, formulários, barras de navegação e muito mais, sejam formatados corretamente de acordo com os padrões do Bootstrap. Sem isso, os estilos personalizados do Bootstrap não serão aplicados à sua página.-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--FUNÇÃO: 
+        Essa linha de código importa a biblioteca jQuery, uma biblioteca JavaScript amplamente utilizada para simplificar a manipulação do DOM (Modelo de Objeto de Documento) e lidar com interações do usuário.-->
+
+    <!--NECESSIDADE: 
+        O Bootstrap requer a biblioteca jQuery para funcionar. Muitos componentes e funcionalidades do Bootstrap dependem de funções JavaScript fornecidas pelo jQuery. Portanto, é importante incluir o jQuery para que todas as interações e funcionalidades dinâmicas do Bootstrap funcionem corretamente.-->
+
+    <!--Fim - Integrando o BOOTSTRAP ao projeto.====================================================================================== -->
+
+    <!--CSS externo que complementa a estilização da página -->
+    <link rel="stylesheet" href="_css/estilo.css">
+
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+
+            <!--Nav-bar com bootstrap:=============================================================================================== -->
+            <div class="container-fluid" id="cabecalhoSup">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="_img/logoAzul.png" alt="Logo binatur em azul.">
+                    </div>
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary p-1">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarScroll">
+                                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                        style="--bs-scroll-height: 100px;">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Cadastro</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Promoções</a>
+                                        </li>
+                                        <li class="nav-item dropdown" id="menu">
+                                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                                role="button" aria-expanded="false">Menu</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#"><img src="_img/sevicoConta.png"
+                                                            alt="Ícone de acesso a conta."> Minha conta</a></li>
+                                                <li class="dropdown-divider"></li> <!-- Linha divisória -->
+
+                                                <li><a class="dropdown-item" href="#"><img src="_img/sevicoDrop.png"
+                                                            alt="Ícone de sereviços de viagem."> Pedidos</a></li>
+                                                <li class="dropdown-divider"></li> <!-- Linha divisória -->
+
+                                                <li><a class="dropdown-item" href="#"><img src="_img/sevicoClub.png"
+                                                            alt="Ícone de club vip."> Bina-Club</a></li>
+                                                <li class="dropdown-divider"></li> <!-- Linha divisória -->
+
+                                                <li><a class="dropdown-item" href="#"><img src="_img/sevicoAjuda.png"
+                                                            alt="Ícone de acontato e ajuda."> Ajuda</a></li>
+                                                <li class="dropdown-divider"></li> <!-- Linha divisória -->
+
+                                                <li><a class="dropdown-item" href="#"><img src="_img/sevicoEquipe.png"
+                                                            alt="Ícone de equipe."> Quem somos</a></li>
+                                                <li class="dropdown-divider"></li> <!-- Linha divisória -->
+
+                                                <li><a class="dropdown-item" href="#"> <img
+                                                            src="_img/sevicoCondicoes.png"
+                                                            alt="Ícone de termos e condições."> Termos e condições</a>
+                                                </li>
+                                                <li class="dropdown-divider"></li> <!-- Linha divisória -->
+
+                                                <li><a class="dropdown-item" href="#"><img
+                                                            src="_img/sevicoCancelamento.png"
+                                                            alt="Ícone de cancelamento."> políticas de cancelamento</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Buscar"
+                                            aria-label="Search">
+                                        <button class="btn btn-primary" type="submit">Buscar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--Fim - Nav-bar com bootstrap:========================================================================================-->
+
+            <!--Grid de serviços com bootstrap:==================================================================================== -->
+            <div class="container-fluid border">
+                <div class="row" id="tagServico">
+                    <div class="col text-center"><a href=""><img src="_img/iconeHotel.png"
+                                alt="Tag de Hospedagem">Hotel</a></div>
+                    <div class="col text-center"><a href=""><img src="_img/iconeViagem.png"
+                                alt="Tag de Viagem.">Viagem</a></div>
+                    <div class="col text-center"><a href=""><img src="_img/iconePacote.png"
+                                alt="Tag de Pacote Turistico.">Pacotes</a></div>
+                    <div class="col text-center"><a href=""><img src="_img/iconeSeguro.png"
+                                alt="Tag de Seguros.">Seguro</a></div>
+                    <div class="col text-center"><a href=""><img src="_img/iconeOferta.png"
+                                alt="Tag de Ofertas.">Ofertas</a></div>
+                </div>
+            </div>
+            <!--Fim - Grid de serviços com bootstrap:============================================================================== -->
+        </header>
+
+        <section id="boas-vindas">
+
+            <!--Alert com bootstrap: ===============================================================================================-->
+            <div id="alerta">
+                <div class="alert alert-dismissible alert-custom" role="alert">
+                    <p class="text-custom"><strong><img src="_img/alertTimeFast.png"> CADASTRE-SE JÁ!</strong>
+                        &nbsp;&nbsp; Corre lá, <a href="">faça seu
+                            cadastro</a> e aproveite
+                        nossas ofertas.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+            <!--Fim - Alert com bootstrap: ========================================================================================-->
+
+            <!-- Breadcrumb com bootstrap (localização na página e alternativa de navegabilidade)================================== -->
+            <div class="container-fluid">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <!--li class="breadcrumb-item"><a href="index.html">Home</a></li>-->
+                        <li class="breadcrumb-item active" aria-current="page"><b><i>Home</b></i></li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- Fim - Breadcrumb com bootstrap.================================================================================== -->
+
+            <!-- Formulário-Pacotes: ============================================================================================= -->
+            <div id="pacoteNavebar" class="container-fluid border">
+                <h3>PACOTES</h3>
+                <form class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="localPartida">Origem</label>
+                                <input type="text" class="form-control label-with-image" id="localPartida"
+                                    name="localPartida" placeholder="ORIGEM" required>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-md-1">
+                                <div class="form-group">
+                                    <label>&nbsp;</label>
+                                    <button type="button" class="btn">
+                                        <img src="_img/btnTrocaForm.png" alt="Botão de Imagem">
+                                    </button>
+                                </div>
+                            </div>-->
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="localDestino">Destino</label>
+                                <input type="text" class="form-control label-with-image" id="localDestino"
+                                    name="localDestino" placeholder="DESTINO" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="dataIda">ida</label>
+                                <input type="date" class="form-control label-with-image" id="ida" name="ida" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="dataVolta">Volta</label>
+                                <input type="date" class="form-control" id="volta" name="dataVolta" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <label for="quantidadeQuartos">Quartos</label>
+                                <input type="number" class="form-control label-with-image" id="quantidadeQuartos"
+                                    name="quantidadeQuartos" placeholder="0">
+                            </div>
+                        </div>
+
+                        <div class="col-md-1">
+                            <div class="form-group">
+                                <label for="quantidadeHospedes">Hóspedes</label>
+                                <input type="number" class="form-control label-with-image" id="quantidadeHospedes"
+                                    name="quantidadeHospedes" placeholder="0">
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button id="buttonPac" type="submit" class="btn btn-primary form-control">Buscar
+                                    pacote</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--Fim - Formulário-Pacotes: ======================================================================================== -->
+
+            <!-- Banner com imagem de destinos da estação sobreposto por formulário de busca de pacote:=========================== -->
+            <div id="bannerHome" class="container-fluid border">
+                <img src="_img/bannerHome2.png" alt="">
+            </div>
+            <!-- Fim - Banner com imagem de destinos da estação sobreposto por formulário de busca de pacote.======================== -->
+
+            <!-- Alert Bina-Club:==================================================================================================== -->
+            <div id="alertaClub">
+                <div class="alert alert-dismissible alert-custom" role="alert">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-custom"><strong><img src="_img/alertaIconeClub (2).png"> &nbsp;&nbsp; VEM PARA O
+                                BINA-CLUB!</strong>
+                            &nbsp;&nbsp;&nbsp;&nbsp; Ofertas imperdíveis o ano todo.</p>
+                        <div>
+                            <button id="buttonClub" type="submit" class="btn form-control">Bina-Club</button>
+                            <!--<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fim - Alert Bina-Club:============================================================================================== -->
+        </section>
+
+        <section id="promocoes">
+
+            <!-- Breadcrumb parte secundária da página (Promoções):================================================================= -->
+            <div id="breadPromo" class="container-fluid">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#cabecalho">BinaTur</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><b><i>Pacotes de Viagens</b></i></li>
+                        <li class="breadcrumb-item active" aria-current="page"><b><i>Agência de Viagens</b></i></li>
+                    </ol>
+                </nav>
+            </div>
+            <!--Fim - Breadcrumb parte secundária da página (Promoções)============================================================ -->
+
+            <!--Cabeçalho secundária da page (Logo + cabeçalho):====================================================================-->
+            <div id="logoSloganAzul">
+                <img src="_img/logoSloganAzul.png" alt="">
+            </div>
+
+            <div id="agenciaViagem" class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1>BinaTur - Agência de Viagens</h1>
+                        <p>Encontre passagens, hotéis, pacotes, seguro viagem e um clube de vantagens com os melhores
+                            preços em um único local</p>
+                    </div>
+                </div>
+            </div>
+            <!--Fim - Cabeçalho secundária da page (Logo + cabeçalho).=============================================================-->
+
+            <!-- Alert para promoções por datas comemorativas:==================================================================== -->
+            <div id="alertaPromoSazonal">
+                <div class="alert alert-dismissible alert-custom" role="alert">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-custom"><strong><img src="_img/alertaIconePromo.png"> &nbsp;PROMOÇÃO O ANO
+                                TODO!</strong>
+                            &nbsp;&nbsp;&nbsp;&nbsp; Ofertas imperdíveis para sua viagem ser inesquecível.</p>
+                        <div>
+                            <button id="buttonPromo" type="submit" class="btn form-control">EU QUERO</button>
+                            <!--<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fim - Alert para promoções por datas comemorativas:============================================================== -->
+
+            <!--Destinos com Desconto: ===========================================================================================-->
+            <div id="destinosDesconto" class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1>DESTINOS COM ATÉ 50% DE DESCONTO</h1>
+                        <p>Saída: Recife</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="text-center my-4">
+                    <button class="btn btn-primary" id="btnNacional">Destinos Nacionais</button>
+                    <button class="btn btn-primary" id="btnInternacional">Destinos Internacionais</button>
+                </div>
+            </div>
+            <!--Fim - Destinos com Desconto: =====================================================================================-->
+
+            <!--Cards promocionais: ==============================================================================================-->
+
+            <div class="ladoALado">
+                <div id="cardPromo" class="col card text-center custom-card">
+                    <img src="_img/_imgCards/porto_de_galinhas-PE.jpg" class="card-img" alt="Imagem">
+                    <div class="card-img-overlay">
+                        <div class="centered-text">
+                            <h5 class="card-title">Porto de Galinhas-PE</h5>
+                            <p>A PARTIR DE</p>
+                            <P>R$ 150</P>
+                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ladoALado">
+                <div class=" card text-center custom-card">
+                    <img src="_img/_imgCards/salvador-BA.jpg" class="card-img" alt="Imagem">
+                    <div class="card-img-overlay">
+                        <div class="centered-text">
+                            <h5 class="card-title">Salvador-BA</h5>
+                            <p>A PARTIR DE</p>
+                            <P>R$ 150</P>
+                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ladoALado">
+                <div class=" card text-center custom-card">
+                    <img src="_img/_imgCards/cascata_do_caracol-RS.jpg" class="card-img" alt="Imagem">
+                    <div class="card-img-overlay">
+                        <div class="centered-text">
+                            <h5 class="card-title">Cascata do Caracol-RS</h5>
+                            <p>A PARTIR DE</p>
+                            <P>R$ 150</P>
+                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ladoALado">
+                <div class=" card text-center custom-card">
+                    <img src="_img/_imgCards/jericoacoara_CE.jpg" class="card-img" alt="Imagem">
+                    <div class="card-img-overlay">
+                        <div class="centered-text">
+                            <h5 class="card-title">Jericoacoara-CE</h5>
+                            <p>A PARTIR DE</p>
+                            <P>R$ 150</P>
+                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ladoALado">
+                <div id="cardPromo" class="col card text-center custom-card">
+                    <img src="_img/_imgCards/jardimBotanico-PR.jpg" class="card-img" alt="Imagem">
+                    <div class="card-img-overlay">
+                        <div class="centered-text">
+                            <h5 class="card-title">Jardim Botânico de Curitipa-PR</h5>
+                            <p>A PARTIR DE</p>
+                            <P>R$ 150</P>
+                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ladoALado">
+                <div class=" card text-center custom-card">
+                    <img src="_img/_imgCards/praia_dos_carneiros-PE.jpg" class="card-img" alt="Imagem">
+                    <div class="card-img-overlay">
+                        <div class="centered-text">
+                            <h5 class="card-title">Praia de Carneiros-PE</h5>
+                            <p>A PARTIR DE</p>
+                            <P>R$ 150</P>
+                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ladoALado">
+                <div class=" card text-center custom-card">
+                    <img src="_img/_imgCards/lencoisMaranhenses-MA.jpg" class="card-img" alt="Imagem">
+                    <div class="card-img-overlay">
+                        <div class="centered-text">
+                            <h5 class="card-title">Lençóis maranhenses-MA</h5>
+                            <p>A PARTIR DE</p>
+                            <P>R$ 150</P>
+                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ladoALado">
+                <div class=" card text-center custom-card">
+                    <img src="_img/_imgCards/rio_de_janeiro-RJ.jpg" class="card-img" alt="Imagem">
+                    <div class="card-img-overlay">
+                        <div class="centered-text">
+                            <h5 class="card-title">Rio de Janeiro-RJ</h5>
+                            <p>A PARTIR DE</p>
+                            <P>R$ 150</P>
+                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div> <!--Interface-->
+</body>
+
+</html>
