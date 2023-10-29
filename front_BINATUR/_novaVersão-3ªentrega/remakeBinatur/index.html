@@ -136,12 +136,13 @@
         <section id="boas-vindas">
 
             <!--Alert com bootstrap: ===============================================================================================-->
-            <div id="alerta">
+            <div id="alerta" class="container-fluid">
                 <div class="alert alert-dismissible alert-custom" role="alert">
-                    <p class="text-custom"><strong><img src="_img/alertTimeFast.png"> CADASTRE-SE JÁ!</strong>
-                        &nbsp;&nbsp; Corre lá, <a href="">faça seu
-                            cadastro</a> e aproveite
-                        nossas ofertas.</p>
+                    <div class="d-flex align-items-center">
+                        <img src="_img/alertTimeFast.png" alt="Ícone de alerta" class="mr-2">
+                        <p class="text-custom mb-0"><strong>CADASTRE-SE JÁ!</strong> Corre lá, <a href="#">faça seu
+                                cadastro</a> e aproveite nossas ofertas.</p>
+                    </div>
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             </div>
@@ -151,7 +152,6 @@
             <div class="container-fluid">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <!--li class="breadcrumb-item"><a href="index.html">Home</a></li>-->
                         <li class="breadcrumb-item active" aria-current="page"><b><i>Home</b></i></li>
                     </ol>
                 </nav>
@@ -159,94 +159,64 @@
             <!-- Fim - Breadcrumb com bootstrap.================================================================================== -->
 
             <!-- Formulário-Pacotes: ============================================================================================= -->
-            <div id="pacoteNavebar" class="container-fluid border">
-                <h3>PACOTES</h3>
-                <form class="container-fluid">
+            <div id="pacoteForm" class="container-fluid border">
+                <div id="p-fInterno" class="container-fluid">
+                    <h5>Pacotes</h5>
                     <div class="row">
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label for="localPartida">Origem</label>
-                                <input type="text" class="form-control label-with-image" id="localPartida"
-                                    name="localPartida" placeholder="ORIGEM" required>
-                            </div>
+                        <div class="col-sm-2">
+                            <label for="Partida" class="form-label">Local de partida</label>
+                            <input id="partida" type="text" class="form-control" placeholder="Busque um aeroporto"
+                                aria-label="Partida">
                         </div>
-
-                        <!-- <div class="col-md-1">
-                                <div class="form-group">
-                                    <label>&nbsp;</label>
-                                    <button type="button" class="btn">
-                                        <img src="_img/btnTrocaForm.png" alt="Botão de Imagem">
-                                    </button>
-                                </div>
-                            </div>-->
-
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label for="localDestino">Destino</label>
-                                <input type="text" class="form-control label-with-image" id="localDestino"
-                                    name="localDestino" placeholder="DESTINO" required>
-                            </div>
+                        <div class="col-sm-2">
+                            <label for="Destino" class="form-label">Destino</label>
+                            <input id="destino" type="text" class="form-control"
+                                placeholder="Busque uma cidade ou hospedagem" aria-label="Destino">
                         </div>
-
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label for="dataIda">ida</label>
-                                <input type="date" class="form-control label-with-image" id="ida" name="ida" required>
-                            </div>
+                        <div class="col-sm-2">
+                            <label for="Ida" class="form-label">Ida</label>
+                            <input type="date" class="form-control" aria-label="Ida">
                         </div>
-
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label for="dataVolta">Volta</label>
-                                <input type="date" class="form-control" id="volta" name="dataVolta" required>
-                            </div>
+                        <div class="col-sm-2">
+                            <label for="Volta" class="form-label">Volta</label>
+                            <input type="date" class="form-control" aria-label="Volta">
                         </div>
-
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <label for="quantidadeQuartos">Quartos</label>
-                                <input type="number" class="form-control label-with-image" id="quantidadeQuartos"
-                                    name="quantidadeQuartos" placeholder="0">
-                            </div>
+                        <div class="col-sm-1">
+                            <label for="Quarto" class="form-label">Quartos</label>
+                            <input id="quarto" type="number" class="form-control" placeholder="0" aria-label="Quarto"
+                                value="1">
                         </div>
-
-                        <div class="col-md-1">
-                            <div class="form-group">
-                                <label for="quantidadeHospedes">Hóspedes</label>
-                                <input type="number" class="form-control label-with-image" id="quantidadeHospedes"
-                                    name="quantidadeHospedes" placeholder="0">
-                            </div>
+                        <div class="col-sm-1">
+                            <label for="Hospedes" class="form-label">hospedes</label>
+                            <input id="hospedes" type="number" class="form-control" placeholder="" aria-label="Hospedes"
+                                value="2">
                         </div>
-
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label>&nbsp;</label>
-                                <button id="buttonPac" type="submit" class="btn btn-primary form-control">Buscar
-                                    pacote</button>
-                            </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">BUSCAR PACOTE</button>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
+
             <!--Fim - Formulário-Pacotes: ======================================================================================== -->
 
             <!-- Banner com imagem de destinos da estação sobreposto por formulário de busca de pacote:=========================== -->
-            <div id="bannerHome" class="container-fluid border">
-                <img src="_img/bannerHome2.png" alt="">
-            </div>
+            <!-- <div id="bannerHome" class="container-fluid border">
+                <img src="_img/bannerHome2.png" alt="Balli">
+            </div> -->
             <!-- Fim - Banner com imagem de destinos da estação sobreposto por formulário de busca de pacote.======================== -->
 
             <!-- Alert Bina-Club:==================================================================================================== -->
-            <div id="alertaClub">
-                <div class="alert alert-dismissible alert-custom" role="alert">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <p class="text-custom"><strong><img src="_img/alertaIconeClub (2).png"> &nbsp;&nbsp; VEM PARA O
-                                BINA-CLUB!</strong>
-                            &nbsp;&nbsp;&nbsp;&nbsp; Ofertas imperdíveis o ano todo.</p>
-                        <div>
-                            <button id="buttonClub" type="submit" class="btn form-control">Bina-Club</button>
-                            <!--<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+            <div id="alertaClub" class="container-fluid">
+                <div class="alert alert-custom" role="alert">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="_img/alertaIconeClub (2).png" alt="Ícone de alerta" class="alert-icon">
+                        <div class="flex-grow-1">
+                            <p class="text-custom mb-0">
+                                <strong>VEM PARA O BINA-CLUB!</strong> Ofertas imperdíveis o ano todo.
+                            </p>
                         </div>
+                        <button id="buttonClub" type="submit" class="btn btn-danger">Bina-Club</button>
                     </div>
                 </div>
             </div>
@@ -259,8 +229,8 @@
             <div id="breadPromo" class="container-fluid">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#cabecalho">BinaTur</a></li>
-                        <li class="breadcrumb-item active" aria-current="page"><b><i>Pacotes de Viagens</b></i></li>
+                        <li class="breadcrumb-item"><a href="#cabecalho">Pacotes</a>
+                        </li>
                         <li class="breadcrumb-item active" aria-current="page"><b><i>Agência de Viagens</b></i></li>
                     </ol>
                 </nav>
@@ -299,142 +269,440 @@
             </div>
             <!--Fim - Alert para promoções por datas comemorativas:============================================================== -->
 
-            <!--Destinos com Desconto: ===========================================================================================-->
-            <div id="destinosDesconto" class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <h1>DESTINOS COM ATÉ 50% DE DESCONTO</h1>
-                        <p>Saída: Recife</p>
+            <!--Cards Datas comemorativas: =======================================================================================-->
+            <div id="promoFesta">
+                <div class="ladoALado">
+                    <div id="crianca">
+                        <a href=""><img src="_img/_imgPromoSazonal/criançasBinatur.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="ladoALado">
+                    <div id="halloween">
+                        <a href=""><img src="_img/_imgPromoSazonal/haloweenBinatur.png" alt=""></a>
                     </div>
                 </div>
             </div>
+            <!--Fim - Cards Datas comemorativas: =================================================================================-->
 
-            <div class="container">
+            <div id="breadDestino" class="container-fluid">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#cabecalho">Pacotes</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page"><b><i>Agência de Viagens</b></i></li>
+                        <li class="breadcrumb-item active" aria-current="page"><b><i>Destinos</b></i></li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!--Destinos com Desconto: ===========================================================================================-->
+            <div id="destinosDesconto" class="container-fluid">
+                <h1>DESCONTOS COM ATÉ 50% DE DESCONTO</h1>
+                <p><strong>Saída:</strong>&nbsp;Recife</p>
+            </div>
+
+            <div id="btnNacionalidade" class="container">
                 <div class="text-center my-4">
-                    <button class="btn btn-primary" id="btnNacional">Destinos Nacionais</button>
-                    <button class="btn btn-primary" id="btnInternacional">Destinos Internacionais</button>
+                    <button class="btn btn-outline" id="btnNacional">Nacional</button>
+                </div>
+                <div class="text-center my-4">
+                    <button class="btn btn-outline" id="btnInternacional">Internacional</button>
                 </div>
             </div>
             <!--Fim - Destinos com Desconto: =====================================================================================-->
 
             <!--Cards promocionais: ==============================================================================================-->
 
-            <div class="ladoALado">
-                <div id="cardPromo" class="col card text-center custom-card">
-                    <img src="_img/_imgCards/porto_de_galinhas-PE.jpg" class="card-img" alt="Imagem">
-                    <div class="card-img-overlay">
-                        <div class="centered-text">
-                            <h5 class="card-title">Porto de Galinhas-PE</h5>
-                            <p>A PARTIR DE</p>
-                            <P>R$ 150</P>
-                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+            <div id="cardsPromocionais">
+                <div id="destinoNaciolnal">
+                    <div class="ladoALado">
+                        <div id="cardPromo" class="col card text-center custom-card">
+                            <img src="_img/_imgCards/porto_de_galinhas-PE.jpg" class="card-img"
+                                alt="Praia de Porto de Galinhas em Pernambuco.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">Porto de Galinhas-PE</h5>
+                                    <p class="textoA">A PARTIR DE</p>
+                                    <P class="textoB">R$ <span>150</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="ladoALado">
-                <div class=" card text-center custom-card">
-                    <img src="_img/_imgCards/salvador-BA.jpg" class="card-img" alt="Imagem">
-                    <div class="card-img-overlay">
-                        <div class="centered-text">
-                            <h5 class="card-title">Salvador-BA</h5>
-                            <p>A PARTIR DE</p>
-                            <P>R$ 150</P>
-                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/salvador-BA.jpg" class="card-img"
+                                alt="Elevador Lacerda em Salvador-BA.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">Salvador-BA</h5>
+                                    <p class="textoA"><span class="riscado">DE&nbsp;</span> <del>R$550</del> <span
+                                            class="riscado">&nbsp;POR</span></p>
+                                    <P class="textoB">R$ <span>390</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="ladoALado">
-                <div class=" card text-center custom-card">
-                    <img src="_img/_imgCards/cascata_do_caracol-RS.jpg" class="card-img" alt="Imagem">
-                    <div class="card-img-overlay">
-                        <div class="centered-text">
-                            <h5 class="card-title">Cascata do Caracol-RS</h5>
-                            <p>A PARTIR DE</p>
-                            <P>R$ 150</P>
-                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/cascata_do_caracol-RS.jpg" class="card-img"
+                                alt="Cascata do Caracol na serra gaucha -RS">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">Cascata do Caracol-RS</h5>
+                                    <p class="textoA">A PARTIR DE</p>
+                                    <P class="textoB">R$ <span>498</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="ladoALado">
-                <div class=" card text-center custom-card">
-                    <img src="_img/_imgCards/jericoacoara_CE.jpg" class="card-img" alt="Imagem">
-                    <div class="card-img-overlay">
-                        <div class="centered-text">
-                            <h5 class="card-title">Jericoacoara-CE</h5>
-                            <p>A PARTIR DE</p>
-                            <P>R$ 150</P>
-                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/jericoacoara_CE.jpg" class="card-img"
+                                alt="Praia de Jericoacoara no Ceará.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">Jericoacoara-CE</h5>
+                                    <p class="textoA">A PARTIR DE</p>
+                                    <P class="textoB">R$ <span>388</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="ladoALado">
-                <div id="cardPromo" class="col card text-center custom-card">
-                    <img src="_img/_imgCards/jardimBotanico-PR.jpg" class="card-img" alt="Imagem">
-                    <div class="card-img-overlay">
-                        <div class="centered-text">
-                            <h5 class="card-title">Jardim Botânico de Curitipa-PR</h5>
-                            <p>A PARTIR DE</p>
-                            <P>R$ 150</P>
-                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                    <div class="ladoALado">
+                        <div id="cardPromo" class="col card text-center custom-card">
+                            <img src="_img/_imgCards/jardimBotanico-PR.jpg" class="card-img"
+                                alt="Opera de Arames no Jardim Botânico de Curitiba-PR.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">Jardim Botânico de Curitiba-PR</h5>
+                                    <p class="textoA"><span class="riscado">DE&nbsp;</span> <del>R$765</del> <span
+                                            class="riscado">&nbsp;POR</span></p>
+                                    <P class="textoB">R$ <span>550</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="ladoALado">
-                <div class=" card text-center custom-card">
-                    <img src="_img/_imgCards/praia_dos_carneiros-PE.jpg" class="card-img" alt="Imagem">
-                    <div class="card-img-overlay">
-                        <div class="centered-text">
-                            <h5 class="card-title">Praia de Carneiros-PE</h5>
-                            <p>A PARTIR DE</p>
-                            <P>R$ 150</P>
-                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/praia_dos_carneiros-PE.jpg" class="card-img"
+                                alt="Igrejinha da praia de Carneiros em Pernambuco.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">Praia de Carneiros-PE</h5>
+                                    <p class="textoA">A PARTIR DE</p>
+                                    <P class="textoB">R$ <span>150</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="ladoALado">
-                <div class=" card text-center custom-card">
-                    <img src="_img/_imgCards/lencoisMaranhenses-MA.jpg" class="card-img" alt="Imagem">
-                    <div class="card-img-overlay">
-                        <div class="centered-text">
-                            <h5 class="card-title">Lençóis maranhenses-MA</h5>
-                            <p>A PARTIR DE</p>
-                            <P>R$ 150</P>
-                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/lencoisMaranhenses-MA.jpg" class="card-img"
+                                alt="Duna e piscinas naturais dos Lençóis Maranhenses-MA.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">Lençóis maranhenses-MA</h5>
+                                    <p class="textoA"><span class="riscado">DE&nbsp;</span> <del>R$478</del> <span
+                                            class="riscado">&nbsp;POR</span></p>
+                                    <P class="textoB">R$ <span>346</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="ladoALado">
-                <div class=" card text-center custom-card">
-                    <img src="_img/_imgCards/rio_de_janeiro-RJ.jpg" class="card-img" alt="Imagem">
-                    <div class="card-img-overlay">
-                        <div class="centered-text">
-                            <h5 class="card-title">Rio de Janeiro-RJ</h5>
-                            <p>A PARTIR DE</p>
-                            <P>R$ 150</P>
-                            <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/rio_de_janeiro-RJ.jpg" class="card-img"
+                                alt="Cristo Redentor no Corcovado em Rio de Janeiro-RJ.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">Rio de Janeiro-RJ</h5>
+                                    <p class="textoA"><span class="riscado">DE&nbsp;</span> <del>R$650</del> <span
+                                            class="riscado">&nbsp;POR</span></p>
+                                    <P class="textoB">R$ <span>486</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div> <!--destinoNacional-->
+
+                <div id="destinoInternacional">
+                    <div class="ladoALado">
+                        <div id="cardPromo" class="col card text-center custom-card">
+                            <img src="_img/_imgCards/_gringa/grecia.jpg" class="card-img"
+                                alt="Costa de Santorini na Grécia.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">GRÉCIA</h5>
+                                    <p class="textoA">A PARTIR DE</p>
+                                    <P class="textoB">R$ <span>2.830</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/_gringa/frança.jpg" class="card-img"
+                                alt="Arco do Triunfo em Paris na França.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">PARIS</h5>
+                                    <p class="textoA"><span class="riscado">DE&nbsp;</span> <del>R$2.550</del> <span
+                                            class="riscado">&nbsp;POR</span></p>
+                                    <P class="textoB">R$ <span>1.990</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/_gringa/egito.jpg" class="card-img"
+                                alt="Pirâmides de Gizé no Egito.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">EGITO</h5>
+                                    <p class="textoA">A PARTIR DE</p>
+                                    <P class="textoB">R$ <span>2.780</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/_gringa/veneza.jpg" class="card-img"
+                                alt="Canais de Veneza na Itália.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">VENEZA</h5>
+                                    <p class="textoA">A PARTIR DE</p>
+                                    <P class="textoB">R$ <span>3.288</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ladoALado">
+                        <div id="cardPromo" class="col card text-center custom-card">
+                            <img src="_img/_imgCards/_gringa/moscow.jpg" class="card-img"
+                                alt="Praça Vermelha em Moscow na Rússia.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">MOSCOW</h5>
+                                    <p class="textoA"><span class="riscado">DE&nbsp;</span> <del>R$4.765</del> <span
+                                            class="riscado">&nbsp;POR</span></p>
+                                    <P class="textoB">R$ <span>3.550</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/_gringa/londres.jpg" class="card-img"
+                                alt="'Tower Bridge' - A Ponte de Londres na Inglaterra. ">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">LONDRES</h5>
+                                    <p class="textoA">A PARTIR DE</p>
+                                    <P class="textoB">R$ <span>1.950</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/_gringa/turquia.jpg" class="card-img"
+                                alt=" Desfile de balões no Vale da Capadócia na Turquia.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">CAPADÓCIA</h5>
+                                    <p class="textoA"><span class="riscado">DE&nbsp;</span> <del>R$8.478</del> <span
+                                            class="riscado">&nbsp;POR</span></p>
+                                    <P class="textoB">R$ <span>7.346</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ladoALado">
+                        <div class=" card text-center custom-card">
+                            <img src="_img/_imgCards/_gringa/china.jpg" class="card-img"
+                                alt="Cidade Murada de Datong na China.">
+                            <div class="card-img-overlay">
+                                <div class="centered-text">
+                                    <h5 class="card-title">CHINA</h5>
+                                    <p class="textoA"><span class="riscado">DE&nbsp;</span> <del>R$10.650</del> <span
+                                            class="riscado">&nbsp;POR</span></p>
+                                    <P class="textoB">R$ <span>8.486</span></P>
+                                    <button type="button" class="btn btn-outline-light">CONFERIR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--destinoInternacional -->
+
+            </div> <!--cardsPromocionais -->
+
+            <!--BTN - Ver Todas as Ofertas:========================================================================================-->
+            <div id="btnTodasPromocoes">
+                <button type="button" class="btn btn-outline-danger"><a href="">Ver todas as ofertas</a></button>
             </div>
-
-
+            <!--Fim - BTN - Ver Todas as Ofertas:==================================================================================-->
         </section>
 
+
+        <section id="institucional">
+
+            <div id="cardInstitucional" class="container-fluid">
+                <!--Quem somos:====================================================================================================== -->
+                <div id="quemSomos"><a href=""><img src="_img/_imgInstitucional/quemSomos.png"
+                            alt="A BinaTur é sua porta para aventuras incríveis. Nossa missão é tornar cada viagem uma jornada única e inesquecível. Saiba mais."></a>
+                </div>
+                <!--Fim - Quem somos:================================================================================================ -->
+
+                <!--Missão; Visão e Valores: =========================================================================================-->
+                <div id="mvv">
+                    <div class="row">
+                        <div class="col">
+                            <div id="missao">
+                                <a href=""><img src="_img/_imgInstitucional/missao.png" class="img-fluid"
+                                        alt="Missão: Conectar pessoas ao mundo por meio de experiências de viagem excepcionais, proporcionando momentos enriquecedores, inesquecíveis e enraizados em autenticidade. Saiba mais."></a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div id="visao">
+                                <a href=""><img src="_img/_imgInstitucional/visao.png" class="img-fluid"
+                                        alt="Visão: Ser reconhecida como uma agência de viagens líder, inovadora e confiável, que inspira viajantes a explorar o planeta com paixão, responsabilidade e respeito pela diversidade cultural e ambiental. Saiba mais."></a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div id="valores">
+                                <a href=""><img src="_img/_imgInstitucional/valores.png" class="img-fluid"
+                                        alt="Valores: Paixão pela Descoberta;
+                            Integridade e Ética; Atendimento ao Cliente Excepcional; Inovação Contínua; Respeito pela Diversidade. Saiba mais."></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim - Missão; Visão e Valores: ===================================================================================-->
+            </div> <!--cardInstitucional-->
+
+            <div id="centralOfertas" class="row">
+                <!--Central de Ajudas: ===================================================================================================-->
+                <div id="centralAjuda" class=" col-md-5">
+                    <div class="card">
+                        <a href="seu-link-aqui">
+                            <img src="_img/_imgInstitucional/ajuda.png" class="card-img-top"
+                                alt="Central de ajuda: fale conosco, sua satisfação é o nosso objetivo. Acesse agora.">
+                        </a>
+                    </div>
+                </div>
+                <!--Fim - Central de Ajudas. =============================================================================================-->
+
+                <!--Receba Ofertas: ======================================================================================================-->
+                <div id="recebaOfertas" class="col">
+                    <div id="cardOfertas" class="card">
+                        <div class="card-body">
+                            <form>
+                                <div id="formOfertas" class="row">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control col" id="nome" placeholder="Nome">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control col" id="email" placeholder="e-mail">
+                                    </div>
+                                    <button type="submit" id="btnRecebaOfertas" class="btn btn-primary col-sm-2">EU
+                                        QUERO!</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim - Receba Ofertas. ================================================================================================-->
+            </div>
+
+            <div id="duvidas" class="container">
+                <div class="row">
+                    <h3 class="col text-center">DÚVIDAS FREQUENTES</h3>
+                </div>
+                <hgroup class="row">
+                    <h5 class="col">DÚVIDA 1</h5>
+                    <h5 class="col">DÚVIDA 2</h5>
+                    <h5 class="col">DÚVIDA 3</h5>
+                </hgroup>
+                <div class="row">
+                    <p class="col">contúdo dívida 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde
+                        minus modi illum ipsa molestias quisquam nam at ducimus, inventore qui tenetur, velit similique?
+                        Dolor expedita distinctio nesciunt nobis doloribus?</p>
+                    <p class="col">contúdo dívida 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                        omnis repellat doloribus atque enim ipsam ea, perferendis sit perspiciatis id est? Atque
+                        exercitationem, iusto doloremque corporis sint aliquid quasi repudiandae?</p>
+                    <p class="col">contúdo dívida 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                        ipsum voluptas numquam est reiciendis optio rem voluptatum recusandae sequi inventore animi ut
+                        aliquid iusto nostrum omnis, quod facilis impedit sint?</p>
+                </div>
+            </div>
+
+            <div id="chamadas" class="container">
+                <div class="row">
+                    <h5 class="col text-center">Agência de Viagens</h5>
+                </div>
+                <div class="row">
+                    <p class="col text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, nobis aspernatur porro quibusdam reiciendis ut illo deleniti id, enim eum harum repudiandae consequuntur earum, temporibus distinctio aliquid possimus fugiat. Ratione?</p> 
+                </div>
+
+                <div class="row">
+                    <h6 class="col text-center">Viaje sem preocupações</h6>
+                </div>
+                <div class="row">
+                    <p class="col text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, nobis aspernatur porro quibusdam reiciendis ut illo deleniti id, enim eum harum repudiandae consequuntur earum, temporibus distinctio aliquid possimus fugiat. Ratione?</p> 
+                </div>
+
+                <div class="row">
+                    <h6 class="col text-center">Quando pensar em viajer: a BinaTur é o canal do sucesso</h6>
+                </div>
+                <div class="row">
+                    <p class="col text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, nobis aspernatur porro quibusdam reiciendis ut illo deleniti id, enim eum harum repudiandae consequuntur earum, temporibus distinctio aliquid possimus fugiat. Ratione?</p> 
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h1>FOOTER</h1>
+        </footer>
+
     </div> <!--Interface-->
+
+    <script src="_js/funcoes.js"></script>
+
 </body>
 
 </html>

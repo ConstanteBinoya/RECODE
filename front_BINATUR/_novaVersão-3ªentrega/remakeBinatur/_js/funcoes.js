@@ -1,38 +1,51 @@
-/*Este código JavaScript faz o seguinte: permite alternar a visibilidade dos destinos nacionais e internacionais na página, com base no botão que o usuário clica.
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona os botões e as divs
+    var btnNacional = document.getElementById("btnNacional");
+    var btnInternacional = document.getElementById("btnInternacional");
+    var destinoNacional = document.getElementById("destinoNaciolnal");
+    var destinoInternacional = document.getElementById("destinoInternacional");
 
-1) Ele aguarda o carregamento completo do DOM do documento usando document.addEventListener('DOMContentLoaded', function() {...}.
-
-2) Captura os botões com as IDs btnNacional e btnInternacional e as áreas (divs) de destinos nacionais e internacionais com as IDs cardNacional e cardInternacional.
-
-3) Define eventos de clique para o botão "Nacional" e o botão "Internacional". Quando o botão "Nacional" é clicado, ele mostra os destinos nacionais e oculta os destinos internacionais. Quando o botão "Internacional" é clicado, ele faz o oposto, mostrando os destinos internacionais e ocultando os destinos nacionais.*/
-
-// Espera até que o DOM (Document Object Model) esteja totalmente carregado
-document.addEventListener('DOMContentLoaded', function() {
-    // Captura os botões de nacional e internacional
-    const btnNacional = document.getElementById('btnNacional');
-    const btnInternacional = document.getElementById('btnInternacional');
-
-    // Captura as áreas (divs) onde estão os destinos nacionais e internacionais
-    const cardNacional = document.getElementById('cardNacional');
-    const cardInternacional = document.getElementById('cardInternacional');
-
-    // Define eventos de clique para o botão "Nacional"
-    btnNacional.addEventListener('click', function() {
-        // Quando o botão "Nacional" é clicado:
-        // Mostra os destinos nacionais e oculta os destinos internacionais
-        cardNacional.style.display = 'block';
-        cardInternacional.style.display = 'none';
+    // Adiciona o evento de clique ao botão "Nacional"
+    btnNacional.addEventListener("click", function () {
+        destinoNacional.style.display = "block";
+        destinoInternacional.style.display = "none";
     });
 
-    // Define eventos de clique para o botão "Internacional"
-    btnInternacional.addEventListener('click', function() {
-        // Quando o botão "Internacional" é clicado:
-        // Mostra os destinos internacionais e oculta os destinos nacionais
-        cardNacional.style.display = 'none';
-        cardInternacional.style.display = 'block';
+    // Adiciona o evento de clique ao botão "Internacional"
+    btnInternacional.addEventListener("click", function () {
+        destinoNacional.style.display = "none";
+        destinoInternacional.style.display = "block";
     });
 
-    // Define o padrão inicial para destinos nacionais (mostra os destinos nacionais)
-    cardNacional.style.display = 'block';
-    cardInternacional.style.display = 'none';
+    // Por padrão, exibe o conteúdo do botão "Nacional"
+    destinoNacional.style.display = "block";
+    destinoInternacional.style.display = "none";
 });
+
+
+
+
+
+
+
+
+
+
+
+
+//Lógica para a transição dos botões de nacionalidade: ================================================================================
+
+document.getElementById("btnNacional").classList.add("active"); // Adiciona a classe 'active' ao botão Nacional por padrão
+
+// Adiciona o evento de clique aos botões
+document.getElementById("btnNacional").addEventListener("click", function() {
+    document.getElementById("btnNacional").classList.add("active");
+    document.getElementById("btnInternacional").classList.remove("active");
+});
+
+// Adiciona o evento de clique aos botões
+document.getElementById("btnInternacional").addEventListener("click", function() {
+    document.getElementById("btnInternacional").classList.add("active");
+    document.getElementById("btnNacional").classList.remove("active");
+});
+//Fim - Lógica para a transição dos botões de nacionalidade: ==========================================================================

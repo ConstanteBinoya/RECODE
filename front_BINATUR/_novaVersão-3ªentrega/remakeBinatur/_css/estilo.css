@@ -25,7 +25,7 @@
 /*Fim - Área do navbar: ==============================================================================================================*/
 
 /*Barra das tags de serviços:*/
-#tagServico  {
+#tagServico {
     border: solid 1px #cac2c2c9;
     margin-top: 50px;
     padding: 4px;
@@ -48,9 +48,7 @@
     height: 60px;
     color: #fff;
     font-weight: bold;
-    position: absolute;
-    margin-top: 1px;
-    width: 100%;
+    padding: 10px;
 }
 
 .text-custom {
@@ -68,68 +66,107 @@
     color: #ffffff;
 }
 
+/* Estilos para telas menores (rescurso alternativo: não consegui apenas com o bootstrap e suas classes) */
+@media (max-width: 767px) {
+    .text-custom {
+        margin-left: 0; /* Remove a margem esquerda em telas menores */
+    }
+    
+    .text-custom strong {
+        font-size: 12pt; /* Reduza o tamanho do texto forte em telas menores */
+    }
+}
 /*Fim - Alert de "FAÇA SEU CADASTRO JÁ!".*/
 /*==================================================================================================================================*/
 
 /*Barra de pacotes:*/
-#pacoteNavebar {
-    position: absolute;
-    width: 95%;
-    margin: 50px 0px 0px 30px;
-    padding: 10px 3px 30px 10px;
+#pacoteForm {
+    background-image: url('../_img/bannerHome2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  /* Altura correspondendo ao contêiner, largura ajustada automaticamente */
+    width: 100%;
+    height: 330px;
+    padding-top: 30px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#p-fInterno {
     border-radius: 10px;
     background-color: #ffffff;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 140px;
+    padding-top: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
 
-#pacoteNavebar h3 {
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    color: #444444;
-}
-
-.label-with-image#localPartida {
-    background-image: url('../_img/aviaoForm.png');
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    padding-left: 30px;
-    background-position: center left;
-}
-
-.label-with-image#localDestino {
-    background-image: url('../_img/tagForm.png');
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    padding-left: 30px;
-    background-position: center left;
-}
-
-.label-with-image#quantidadeQuartos {
-    background-image: url('../_img/quartoForm.png');
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    padding-left: 30px;
-    background-position: center left;
-}
-
-.label-with-image#quantidadeHospedes {
-    background-image: url('../_img/pessoasForm.png');
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    padding-left: 30px;
-    background-position: center left;
-}
-
-#buttonPac {
-    background-color: #007bff;
-    color: #fff;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
-    font-size: 23px; 
-    font-weight: bold;
-    padding: 10px;
+#pacoteForm h5 {
+    font-size: 30px;
+    color: #888888;
     margin-top: -15px;
 }
 
+#pacoteForm .form-label {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+    color: #888888;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#pacoteForm .form-control {
+    margin-top: 0px;
+    font-size: 10pt;
+    font-style: italic;
+    color: #888888;
+}
+
+#pacoteForm button {
+    margin-top: 25px;
+    height: 50px;
+}
+
+#pacoteForm #partida {
+    background-image: url('../_img/aviaoForm.png');
+    background-repeat: no-repeat;
+    background-size: 15% 70%;
+    background-position: 2px;
+}
+
+#pacoteForm #destino {
+    background-image: url('../_img/tagForm.png');
+    background-repeat: no-repeat;
+    background-size: 15% 70%;
+    background-position: 2px;
+}
+
+#pacoteForm #quarto {
+    background-image: url('../_img/quartoForm.png');
+    background-repeat: no-repeat;
+    background-size: 25% 70%;
+    background-position: 30px;
+}
+
+#pacoteForm #hospedes {
+    background-image: url('../_img/pessoasForm.png');
+    background-repeat: no-repeat;
+    background-size: 20% 70%;
+    background-position: 30px;
+}
+
+#partida::placeholder {
+    padding-left: 30px;
+}
+
+#destino::placeholder {
+    padding-left: 30px;
+}
+
+#pacoteForm button {
+    font-weight: bold;
+    width: 180px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
 /*Fim - Barra de pacotes.*/
 /*==================================================================================================================================*/
 
@@ -155,51 +192,83 @@
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
     height: 70px;
     font-weight: bold;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 35px ;
-    width: 95%;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.alert-icon {
+    height: 40px;
+    margin-left: 10px;
 }
 
 #alertaClub .text-custom {
-    margin-top: -5px;
-    margin-left: 100px;
     color: #ffffff;
 }
 
 #alertaClub .text-custom strong {
-    font-size: 20pt;
+    font-size: 18pt;
 }
 
 #alertaClub p {
-    font-size: 15pt;
+    font-size: 14pt;
 }
 
 #alertaClub img {
     height: 60px;
-    margin-top: -7px;
+    margin-top: -5px;
+    margin-left: 100px;
 }
 
 #alertaClub #buttonClub {
     background-color: #fa1c41;
     color: #fff;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
-    font-size: 20px; 
+    font-size: 20px;
     font-weight: bold;
-    padding: 5px ;
+    padding: 5px 15px;
     border-radius: 35px;
-    margin-top: -30px;
-    margin-right: 120px;
+    margin-top: -15px; 
     width: 200px;
+    margin-right: 10px;
     height: 45px;
+}
+
+/* Estilos para telas menores (responsivo) */
+@media (max-width: 767px) {
+    #alertaClub .text-custom strong {
+        font-size: 18pt;
+    }
+
+    #alertaClub p {
+        font-size: 14pt;
+    }
+
+    #buttonClub {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
 /*Fim - Alert Bina-Club.*/
 /*==================================================================================================================================*/
 
-/*Breadcrumb da Section Promoções:*/
+/*Breadcrumb agência de viagens:*/
 section#promocoes #breadPromo {
     position: relative;
-    margin-top: 180px;
+    margin-top: 50px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+section#promocoes #breadPromo a {
+    text-decoration: none;
+}
+
+/*Breadcrumb destinos:*/
+section#promocoes #breadDestino {
+    position: relative;
+    margin-top: 140px;
+    margin-bottom: -120px;
     font-size: 8pt;
     font-weight: bold;
 }
@@ -208,12 +277,13 @@ section#promocoes #breadPromo {
 
 /*Logo com slogan:*/
 #logoSloganAzul img {
-    position: relative; 
+    position: relative;
     width: 250px;
     height: 150px;
-    margin-top: -70px; 
-    margin-left: 560px; 
+    margin-top: -60px;
+    margin-left: 560px;
 }
+
 /*Fim - BLogo com slogan.*/
 /*==================================================================================================================================*/
 
@@ -223,19 +293,20 @@ section#promocoes #breadPromo {
     margin-top: 0px;
 }
 
-#agenciaViagem h1{
+#agenciaViagem h1 {
     font-size: 20pt;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     color: #444444;
 }
 
-#agenciaViagem p{
+#agenciaViagem p {
     font-size: 10.5pt;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     color: #444444;
     margin-top: 25px;
 }
+
 /*Título da parte secundária (BinaTur - Agência de viagens).*/
 /*==================================================================================================================================*/
 
@@ -273,41 +344,166 @@ section#promocoes #breadPromo {
     background-color: #fa1c1c;
     color: #fff;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
-    font-size: 20px;  
-    padding: 5px ;
+    font-size: 20px;
+    padding: 5px;
     border-radius: 35px;
     margin-top: -30px;
     margin-right: 10px;
     width: 150px;
     height: 45px;
 }
+
 /*Fim - Alert datas comemorativas.*/
+/*==================================================================================================================================*/
+
+/*Cards de datas Comamorativas:*/
+#promoFesta {
+    margin-bottom: -100px;
+}
+
+#crianca img {
+    width: 650px;
+    height: 200px;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 20px;
+    border-radius: 20px; 
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+#halloween img {
+    width: 650px;
+    height: 200px;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 10px;
+    border-radius: 20px; 
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+/*Fim - Cards de datas Comamorativas:*/
 /*==================================================================================================================================*/
 
 /*Cabeçalho da área de descontos:*/
 #destinosDesconto {
     margin-top: 150px;
 }
+
 /*Fim - Cabeçalho da área de descontos*/
 /*==================================================================================================================================*/
 
+/*Cabeçalho dos Cards*/
+#destinosDesconto h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #444444;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#destinosDesconto strong {
+    font-size: 12pt;
+}
+
+#destinosDesconto {
+    font-size: 10pt;
+    color: #000000;
+}
+
+/*Fim - Cabeçalho dos Cards*/
+/*==================================================================================================================================*/
+
+/*BTN's troca de destinos:*/
+#btnNacionalidade {
+    margin-bottom: -60px;
+}
+
+#btnNacional {
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 120px;
+    margin-left: -140px;
+    border: solid 1px #777474;
+    color: #777474;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+    /* Transição de cores no hover */
+}
+
+#btnInternacional {
+    position: relative;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 120px;
+    margin-top: -115px;
+    margin-left: 99px;
+    border: solid 1px #777474;
+    color: #777474;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+    /* Transição de cores no hover */
+}
+
+#btnNacional.active, #btnInternacional.active {
+    border-color: #0815c9;
+    background-color: rgba(4, 91, 252, 0.3); /* Cor de fundo ativa */
+    font-weight: bold;
+    color: #0206fc; /* Cor do texto ativo */
+}
+
+#btnNacional:hover, #btnInternacional:hover {
+    font-weight: bold;
+    background-color: rgba(80, 78, 78, 0.3); /* Cor de fundo ao passar o cursor (pode ajustar a tonalidade) */
+    color: #fff; /* Cor do texto ao passar o cursor */
+}
+/*Fim - BTN's troca de destinos.*/
+/*==================================================================================================================================*/
+
+/*Cards Promocionais:*/
 .ladoALado {
     display: inline-block;
-    
+
 }
 
 .custom-card {
-    width: 290px; 
+    width: 290px;
     height: 300px;
     position: relative;
-    background-color: #000; /* Cor de fundo da imagem escurecida */
-    color: #fff; /* Cor do texto */
+    background-color: #000;/* Cor de fundo da imagem escurecida */
+    color: #fff;
     overflow: hidden; /* Oculta conteúdo que extrapola o cartão */
-    transition: transform 0.3s; /* Adiciona uma transição suave no efeito de zoom */
+    transition: transform 0.3s;/* Adiciona uma transição suave no efeito de zoom */
     margin: 15px;
     border-radius: 20px;
-    margin-left: 25px ;
-    
+    margin-left: 25px;
+}
+
+.custom-card h5 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.custom-card .textoA {
+    font-size: 10pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-card .textoA span.riscado {
+    font-size: 8pt;
+}
+
+.custom-card .textoA del {
+    font-size: 13pt;
+}
+
+.custom-card .textoB {
+    font-size: 13pt;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif
+}
+
+.custom-card .textoB span {
+    font-size: 25pt;
 }
 
 .custom-card:hover {
@@ -315,8 +511,7 @@ section#promocoes #breadPromo {
 }
 
 .card-img {
-   
-    opacity: 0.5; /* Opacidade da imagem (ajuste conforme necessário) */
+    opacity: 0.5; /* Opacidade da imagem */
     width: 110%;
     height: 100%;
     margin-left: -12px;
@@ -331,13 +526,149 @@ section#promocoes #breadPromo {
 }
 
 .btn-outline-light {
-    background-color: transparent; /* Cor de fundo transparente */
-    border-color: #fff; /* Cor da borda do botão no estado normal */
-    color: #fff; /* Cor do texto do botão no estado normal */
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
 }
 
 .btn-outline-light:hover {
-    background-color: #fff; /* Cor de fundo do botão no hover */
-    color: #000; /* Cor do texto do botão no hover */
+    background-color: #fff;
+    /* Cor de fundo do botão no hover */
+    color: #000;
+    /* Cor do texto do botão no hover */
 }
 
+/*Fim - Cards Promocionais.*/
+/*==================================================================================================================================*/
+
+/*BTN - ver todas as ofertas:*/
+#btnTodasPromocoes {
+    margin-top: 15px;
+    margin-left: 530px;
+}
+
+#btnTodasPromocoes button{
+    width: 300px;
+    border-radius: 20px;
+}
+
+#btnTodasPromocoes a {
+    text-decoration: none;
+    color: #fa1c1c;
+}
+
+#btnTodasPromocoes button:hover {
+    background-color: rgba(252, 4, 4, 0.3);
+}
+
+#btnTodasPromocoes button:hover a {
+    color: #ffffff;
+    font-weight: bold;
+}
+/*Fim - BTN - ver todas as ofertas.*/
+/*==================================================================================================================================*/
+
+/* Quem somos, Missão, Visão e Valores: */
+#quemSomos img{
+    width: 95%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+#mvv .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Isso cria 3 colunas com tamanhos iguais */
+    gap: 10px; /*No contexto de 'grid' o 'gap' serve como margin*/
+}
+
+#mvv {
+    margin-left: 20px;
+}
+
+#mvv img {
+    border: solid 1px #888888;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+/* fim - Quem somos, Missão, Visão e Valores. */
+/*==================================================================================================================================*/
+
+#centralOfertas.row {
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+/*Card - Central de Ajuda:*/
+#centralAjuda .card {
+    width: 500px;
+    height: 150px;
+    /* margin-top: 50px;
+    margin-left: -50px; */
+    border-radius: 10px;
+} 
+
+#centralAjuda .card img {
+    height: 150px;
+    border-radius: 10px;
+}
+/*Fim - Card - Central de Ajuda:*/
+/*==================================================================================================================================*/
+
+/*Card - Receba Ofertas:*/
+#cardOfertas.card {
+    background-image: url('../_img/_imgInstitucional/recebaOfertas.png');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    /* position: absolute;
+    margin-top: -150px;
+    margin-left: 480px; */
+    width: 700px;
+    height: 150px;
+}
+
+.form-group {
+    margin-top: 50px;
+    /* margin-left: 50px; */
+    width: 210px;
+}
+
+.form-group ::placeholder {
+    color: #000000;
+}
+
+.form-group #email {
+    /* position: relative;
+    margin-top: -100px; */
+    margin-left: 60px;
+    height: 50px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+.form-group #nome {
+    height: 50px;
+    margin-left: 55px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+#cardOfertas button#btnRecebaOfertas {
+    /* position: relative; */
+    margin-top: 50px;
+    /* width: 600px; */
+    /* height: 50px; */
+    border-radius: 30px;
+    margin-left: 80px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+/*Fim - Card - Receba Ofertas:*/
+/*==================================================================================================================================*/
+
+/**/
+
+/*Fim - */
+/*==================================================================================================================================*/
