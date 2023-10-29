@@ -8,8 +8,9 @@ Este projeto é o resultado de uma entrega acadêmica para a **RECODE Pro**. A m
 
 ### :eight_spoked_asterisk: [_*Frontend*_:]():star_struck::star_struck::star_struck:
 * HTML-5;
-* CSS-3; e
-* Java Script.
+* CSS-3; 
+* Java Script; e
+* BootStrap.
 ---
 
 ### :eight_spoked_asterisk: [_*Backtend*_:]():exploding_head::exploding_head::exploding_head:
