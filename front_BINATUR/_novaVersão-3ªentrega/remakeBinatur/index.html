@@ -37,7 +37,6 @@
 <body>
     <div id="interface">
         <header id="cabecalho">
-
             <!--Nav-bar com bootstrap:=============================================================================================== -->
             <div class="container-fluid" id="cabecalhoSup">
                 <div class="row">
@@ -197,14 +196,7 @@
                     </div>
                 </div>
             </div>
-
             <!--Fim - Formulário-Pacotes: ======================================================================================== -->
-
-            <!-- Banner com imagem de destinos da estação sobreposto por formulário de busca de pacote:=========================== -->
-            <!-- <div id="bannerHome" class="container-fluid border">
-                <img src="_img/bannerHome2.png" alt="Balli">
-            </div> -->
-            <!-- Fim - Banner com imagem de destinos da estação sobreposto por formulário de busca de pacote.======================== -->
 
             <!-- Alert Bina-Club:==================================================================================================== -->
             <div id="alertaClub" class="container-fluid">
@@ -225,7 +217,7 @@
 
         <section id="promocoes">
 
-            <!-- Breadcrumb parte secundária da página (Promoções):================================================================= -->
+            <!-- Breadcrumb parte secundária da página (Promoções):=============================================================== -->
             <div id="breadPromo" class="container-fluid">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -238,10 +230,6 @@
             <!--Fim - Breadcrumb parte secundária da página (Promoções)============================================================ -->
 
             <!--Cabeçalho secundária da page (Logo + cabeçalho):====================================================================-->
-            <div id="logoSloganAzul">
-                <img src="_img/logoSloganAzul.png" alt="">
-            </div>
-
             <div id="agenciaViagem" class="container-fluid">
                 <div class="row">
                     <div class="col">
@@ -284,17 +272,6 @@
                 </div>
             </div>
             <!--Fim - Cards Datas comemorativas: =================================================================================-->
-
-            <div id="breadDestino" class="container-fluid">
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#cabecalho">Pacotes</a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page"><b><i>Agência de Viagens</b></i></li>
-                        <li class="breadcrumb-item active" aria-current="page"><b><i>Destinos</b></i></li>
-                    </ol>
-                </nav>
-            </div>
 
             <!--Destinos com Desconto: ===========================================================================================-->
             <div id="destinosDesconto" class="container-fluid">
@@ -566,7 +543,6 @@
                         </div>
                     </div>
                 </div> <!--destinoInternacional -->
-
             </div> <!--cardsPromocionais -->
 
             <!--BTN - Ver Todas as Ofertas:========================================================================================-->
@@ -576,8 +552,20 @@
             <!--Fim - BTN - Ver Todas as Ofertas:==================================================================================-->
         </section>
 
+        <!-- Breadcrumb parte terciária da página (Institucional):============================================================ -->
+        <div id="breadInstitucional" class="container-fluid">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#cabecalho">Pacotes</a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#agenciaViagem">Agência de Viagens</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><b><i>Institucional</b></i></li>
+                </ol>
+            </nav>
+        </div>
+        <!--Fim - Breadcrumb parte terciária da página (Institucional).======================================================= -->
 
-        <section id="institucional">
+        <section id="institucional" class="container-fluid border">
 
             <div id="cardInstitucional" class="container-fluid">
                 <!--Quem somos:====================================================================================================== -->
@@ -615,8 +603,9 @@
                 <!--Fim - Missão; Visão e Valores: ===================================================================================-->
             </div> <!--cardInstitucional-->
 
+            <!--Cards da parte Institucional: ========================================================================================-->
             <div id="centralOfertas" class="row">
-                <!--Central de Ajudas: ===================================================================================================-->
+                <!--Central de Ajudas:------------------------------------------ -->
                 <div id="centralAjuda" class=" col-md-5">
                     <div class="card">
                         <a href="seu-link-aqui">
@@ -625,9 +614,9 @@
                         </a>
                     </div>
                 </div>
-                <!--Fim - Central de Ajudas. =============================================================================================-->
+                <!--Fim - Central de Ajudas. ----------------------------------- -->
 
-                <!--Receba Ofertas: ======================================================================================================-->
+                <!--Receba Ofertas: -------------------------------------------- -->
                 <div id="recebaOfertas" class="col">
                     <div id="cardOfertas" class="card">
                         <div class="card-body">
@@ -646,60 +635,277 @@
                         </div>
                     </div>
                 </div>
-                <!--Fim - Receba Ofertas. ================================================================================================-->
+                <!--Fim - Receba Ofertas: -------------------------------------- -->
             </div>
+            <!--Fim - Cards da parte Institucional: ==================================================================================-->
 
-            <div id="duvidas" class="container">
+            <!--Blocos de textos - Dúvidas:===========================================================================================-->
+            <div id="duvidas" class="container-fluid">
                 <div class="row">
-                    <h3 class="col text-center">DÚVIDAS FREQUENTES</h3>
+                    <h4 class="col text-center">DÚVIDAS FREQUENTES</h4>
                 </div>
                 <hgroup class="row">
-                    <h5 class="col">DÚVIDA 1</h5>
-                    <h5 class="col">DÚVIDA 2</h5>
-                    <h5 class="col">DÚVIDA 3</h5>
+                    <h5 class="col">Qual é a política de cancelamento para minha reserva?</h5>
+                    <h5 class="col">Como as reservas são canceladas?</h5>
+                    <h5 class="col">Quais documentos são necessários para viagens internacionais?</h5>
                 </hgroup>
-                <div class="row">
-                    <p class="col">contúdo dívida 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde
-                        minus modi illum ipsa molestias quisquam nam at ducimus, inventore qui tenetur, velit similique?
-                        Dolor expedita distinctio nesciunt nobis doloribus?</p>
-                    <p class="col">contúdo dívida 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                        omnis repellat doloribus atque enim ipsam ea, perferendis sit perspiciatis id est? Atque
-                        exercitationem, iusto doloremque corporis sint aliquid quasi repudiandae?</p>
-                    <p class="col">contúdo dívida 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                        ipsum voluptas numquam est reiciendis optio rem voluptatum recusandae sequi inventore animi ut
-                        aliquid iusto nostrum omnis, quod facilis impedit sint?</p>
+                <div id="paragrafoDuvidas" class="row">
+                    <p class="col">Nossa política de cancelamento varia de acordo com o tipo de reserva, mas geralmente,
+                        pedimos que os cancelamentos sejam feitos com antecedência. Taxas de cancelamento podem ser
+                        aplicadas, e o reembolso também depende do tempo de aviso prévio. Recomendamos verificar os
+                        detalhes específicos da política de cancelamento ao fazer sua reserva.</p>
+                    <p class="col">As reservas podem ser canceladas mediante solicitação do cliente. Geralmente, pedimos
+                        que os cancelamentos sejam feitos com antecedência. Dependendo do tipo de reserva, taxas de
+                        cancelamento podem ser aplicadas. O reembolso também dependerá do tempo de aviso prévio.
+                        Verifique os detalhes da política de cancelamento específica ao fazer sua reserva</p>
+                    <p class="col">Para viagens internacionais, você geralmente precisará de um passaporte válido. Além
+                        disso, alguns destinos podem exigir visto, e requisitos de vacinação podem ser aplicados.
+                        Recomendamos verificar os requisitos de documentação específicos do seu destino com
+                        antecedência.</p>
                 </div>
             </div>
+            <!--Fim - Blocos de textos - Dúvidas:=====================================================================================-->
 
-            <div id="chamadas" class="container">
+            <!--Textos da parte final da sessão institucional: ====================================================================== -->
+            <div id="chamadas" class="container-fluid">
                 <div class="row">
                     <h5 class="col text-center">Agência de Viagens</h5>
                 </div>
                 <div class="row">
-                    <p class="col text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, nobis aspernatur porro quibusdam reiciendis ut illo deleniti id, enim eum harum repudiandae consequuntur earum, temporibus distinctio aliquid possimus fugiat. Ratione?</p> 
+                    <p class="col text-center">Procurar uma agência de viagens é essencial para simplificar a busca pela
+                        viagem dos seus sonhos. Nossos especialistas em viagens têm o conhecimento e as conexões para
+                        tornar sua experiência de viagem única e sem preocupações. Deixe-nos cuidar dos detalhes, desde
+                        a escolha do destino até o retorno para casa, para que você possa desfrutar de momentos
+                        inesquecíveis.</p>
                 </div>
 
                 <div class="row">
                     <h6 class="col text-center">Viaje sem preocupações</h6>
                 </div>
                 <div class="row">
-                    <p class="col text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, nobis aspernatur porro quibusdam reiciendis ut illo deleniti id, enim eum harum repudiandae consequuntur earum, temporibus distinctio aliquid possimus fugiat. Ratione?</p> 
+                    <p class="col text-center">Quem não adoraria viajar sem preocupações? Na nossa agência de viagens,
+                        tornamos esse sonho uma realidade. Cuide das malas, faça as malas e deixe o restante conosco.
+                        Nossos especialistas planejam cada detalhe da sua jornada, desde a escolha do destino até a
+                        organização das atividades e acomodações. Com acesso a ofertas exclusivas e suporte contínuo,
+                        você pode relaxar e desfrutar da viagem dos seus sonhos sem o estresse de planejar cada passo.
+                        Viajar sem preocupações começa aqui, conosco.</p>
                 </div>
 
                 <div class="row">
-                    <h6 class="col text-center">Quando pensar em viajer: a BinaTur é o canal do sucesso</h6>
+                    <h6 class="col text-center">Quando pensar em viajar: a BinaTur é o canal do sucesso</h6>
                 </div>
-                <div class="row">
-                    <p class="col text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, nobis aspernatur porro quibusdam reiciendis ut illo deleniti id, enim eum harum repudiandae consequuntur earum, temporibus distinctio aliquid possimus fugiat. Ratione?</p> 
-                </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="text-center">Quando chegar o momento de planejar sua próxima aventura, lembre-se
+                                de
+                                que a BinaTur é o seu canal do sucesso. Nossa agência de viagens está comprometida em
+                                tornar
+                                cada jornada uma história de sucesso. Com nossa experiência e conhecimento, podemos
+                                transformar
+                                seus sonhos de viajar para destinos incríveis em uma realidade sem complicações.
+                                Oferecemos
+                                pacotes personalizados, acomodações excepcionais e itinerários bem elaborados. Com a
+                                BinaTur,
+                                você pode contar com suporte total durante toda a sua viagem. Então, quando pensar em
+                                viajar,
+                                lembre-se de que estamos aqui para tornar sua jornada um sucesso inesquecível
+                            </p>
+                        </div>
+                    </div>  
             </div>
+            <!--Fim - Textos da parte final da sessão institucional: =============================================================== -->
         </section>
 
-        <footer>
-            <h1>FOOTER</h1>
-        </footer>
+        <!-- Breadcrumb parte quarternária da página (End-page):================================================================ -->
+        <div id="breadFooter" class="container-fluid">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#cabecalho">Pacotes</a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#agenciaViagem">Agência de Viagens</a></li>
+                    <li class="breadcrumb-item"><a href="#institucional">Institucional</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><b><i>Footer</b></i></li>
+                </ol>
+            </nav>
+        </div>
+        <!--Fim - Breadcrumb parte quarternária da página (End-page).========================================================== -->
 
-    </div> <!--Interface-->
+        <footer>
+            <div id="rodape" class="container-fluid border">
+                <!--Logo secundéria:----------------------------------------------------------------------------------- -->
+                <div class="row  justify-content-center">
+                    <img id="logo2" class="col-sm-3" src="_img/_imgFooter/logoSloganAzul.png" alt="">
+                </div>
+                <!--Fim - Logo secundéria. ---------------------------------------------------------------------------- -->
+
+                <!--Serviços no Roda-pè:------------------------------------------------------------------------------- -->
+                <div id="servicosRodape" class="container-fluid">
+                    <hgroup>
+                        <div class="row">
+                            <h6 class="col-sm-2 text-center"><a href="">Quem somos</a></h6>
+                            <h6 class="col-sm-1 text-center"><a href="">Cadastro</a></h6>
+                            <h6 class="col-sm-2 text-center"><a href="">Política de privacidade</a></h6>
+                            <h6 class="col-sm-2 text-center"><a href="">Termos e condições</a></h6>
+                            <h6 class="col-sm-3 text-center"><a href="">cancelamento e reembolso</a></h6>
+                            <h6 class="col-sm-2 text-center"><a href="">Trabalhe conosco</a></h6>
+                        </div>
+                    </hgroup>
+                </div>
+                <!--Fim -Serviços no Roda-pè:-------------------------------------------------------------------------- -->
+
+                <!--Segundo banner de Central de ajuda + App BinaTur:-------------------------------------------------- -->
+                <div id="ajudaApp" class="container-fluid">
+                    <div class="row">
+                        <div id="ajuda" class="col-sm-7 border"></div>
+                        <div id="smartPhone" class="col-sm-1"></div>
+                        <div id="androidAple" class="col">
+                            <a href=""><div id="android"></div></a>
+                            <a href=""><div id="aple"></div></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim - Segundo banner de Central de ajuda + App BinaTur.-------------------------------------------- -->
+
+                <!--Bloco - Formas de pagamento:----------------------------------------------------------------------- -->
+                <div id="formPg" class="container">
+                    <div class="row">
+                        <h4 class="col text-center">Formas de pagamento</h4>
+                    </div>
+                    <div class="row">
+                        <p class="col text-center">Pague no cartão de crédito em até 12 X com juros, boleto, à vista ou
+                            parcelado, ou com pix.</p>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row  justify-content-center">
+                            <img id="cartaoCredito" class="col-sm-3" src="_img/cartoesCredito.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Fim - Bloco - Formas de pagamento.----------------------------------------------------------------- -->
+
+                <!--Bloco - textos comerciais do roda-pé:-------------------------------------------------------------- -->
+                <div id="chamadaFinal" class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Se você está em busca das melhores ofertas em passagens aéreas, você está
+                                no lugar certo. Na BinaTur, oferecemos opções incríveis para economizar em suas viagens.
+                                Fique atento às nossas oportunidades especiais, inclusive durante a madrugada, quando
+                                disponibilizamos ofertas relâmpago. Então, já sabe: quando pensar em passagens aéreas
+                                econômicas, pense na BinaTur, o seu parceiro confiável para viagens com o melhor
+                                custo-benefício.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim - Bloco - textos comerciais do roda-pé.-------------------------------------------------------- -->
+
+                <!--Bloco - barra de serviços do Footer:--------------------------------------------------------------- -->
+                <div id="navBloco" class="container">
+                    <div id="titulos">
+                        <hgroup class="row">
+                            <h5 class="col">Minha Conta</h5>
+                            <h5 class="col">Somos BinaTur</h5>
+                            <h5 class="col">Compra Segura</h5>
+                            <h5 class="col">Alavanque seu Negócio</h5>
+                        </hgroup>
+                    </div>
+                    <div id="linha1" class="linhas">
+                        <hgroup class="row">
+                            <h6 class="col"><a href="">Passaporte BinaTur</a></h6>
+                            <h6 class="col"><a href="">FAQs</a></h6>
+                            <h6 class="col"><a href="">Termos e Condições</a></h6>
+                            <h6 class="col"><a href="">Cadastre sua Locadora</a></h6>
+                        </hgroup>
+                    </div>
+                    <div id="linha2" class="linhas">
+                        <hgroup class="row">
+                            <h6 class="col"><a href="">Cartão BinaTur</a></h6>
+                            <h6 class="col"><a href="">Trabalhe Conosco</a></h6>
+                            <h6 class="col"><a href="">Política de Privacidade</a></h6>
+                            <h6 class="col"><a href="">Programa de Franquias</a></h6>
+                        </hgroup>
+                    </div>
+                    <div id="linha3" class="linhas">
+                        <hgroup class="row">
+                            <h6 class="col"><a href="">Minhas Viagens</a></h6>
+                            <h6 class="col"><a href="">Comunicação Social</a></h6>
+                            <h6 class="col"><a href="">Black Friday</a></h6>
+                            <h6 class="col"><a href="">Programa de Parcerias</a></h6>
+                        </hgroup>
+                    </div>
+                    <div id="linha4" class="linhas">
+                        <hgroup class="row">
+                            <h6 class="col"><a href="">Meu Perfil</a></h6>
+                            <h6 class="col"><a href="">Steakholders</a></h6>
+                            <h6 class="col"><a href="">Ofertas BinaTur</a></h6>
+                            <h6 class="col"><a href="">Ranking Parcerias</a></h6>
+                        </hgroup>
+                    </div>
+                </div>
+                <!--Fim - Bloco - barra de serviços do Footer.--------------------------------------------------------- -->
+
+                <!--Bloco - redes sociais:----------------------------------------------------------------------------- -->
+                <div id="rsTitulo" class="container">
+                    <div class="row">
+                        <h4 class="col text-center">Siga a BinaTur nas Redes Sociais</h4>
+                    </div>
+                </div>
+                <div id="rSocial">
+                    <div class="row">
+                        <div class="col-sm-1"><a href=""><img src="_img/_imgFooter/facebook.png"
+                                    alt="Logo do Facebook."></a>
+                        </div>
+                        <div class="col-sm-1"><a href=""><img src="_img/_imgFooter/instagram.png"
+                                    alt="Logo do Instagram."></a>
+                        </div>
+                        <div class="col-sm-1"><a href=""><img src="_img/_imgFooter/twiter.png"
+                                    alt="Logo do Twiter."></a>
+                        </div>
+                        <div class="col-sm-1"><a href=""><img src="_img/_imgFooter/youtobe.png"
+                                    alt="Logo do Youtobe."></a>
+                        </div>
+                        <div class="col-sm-1"><a href=""><img src="_img/_imgFooter/pinterest.png"
+                                    alt="Logo do Pinterest."></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim - Bloco - redes sociais.----------------------------------------------------------------------- -->
+
+                <div id="encerramento" class="container-fluid">
+                    <div id="cnpj" class="container-fluid">
+                        <div class="row">
+                            <div class="container col-sm-5">
+                                <p>BINATUR.COM - Ministério do Turismo - Cadastur 26.041989.34.0001-7 /
+                                    26.041989.34.0002-3 Copyright 1999-2023, Binatur.com Ltda. Todos os direitos
+                                    reservados.</p>
+                            </div>
+                            <div class="container col-sm-6">
+                                <p>BINATUR Brasil Operadora e Agência de Viagens S.A - CNPJ: 27.701.521/0001-22 Rua
+                                    Walfrido Lins de Moraes, 387, 2º andar, sala 209 | Bairro Janga, Paulista - PE CEP:
+                                    53437-100
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="esclarecimentos" class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <p> BinaTur comercializa os produtos de seus fornecedores apenas de forma direta pelo
+                                    seu site (www.bonatur.com). Não há qualquer venda por redes sociais (Facebook,
+                                    Instagram, Twitter, LinkedIn, etc.). Pós-vendas - os canais oficiais de atendimento
+                                    aos clientes são: por meio do telefone 81 4003 9670 e Minhas Viagens. A BinaTur não
+                                    realiza qualquer tipo de abordagem nas redes sociais ou sites de relacionamento,
+                                    tampouco disponibiliza e-mails de contato com domínios distintos de @decolar.com.
+                                    Endereços de e-mails com domínios: @hotmail.com @gmail.com @outlook.com ou qualquer
+                                    outro neste sentido não tem qualquer relação com a Decolar. Mais esclarecimentos em
+                                    www.binatur.com.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--encerramento-->
+            </div> <!--Container do roda-pé-->
+        </footer>
+    </div><!--Interface-->
 
     <script src="_js/funcoes.js"></script>
 
