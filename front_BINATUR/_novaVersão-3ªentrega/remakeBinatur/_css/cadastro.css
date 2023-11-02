@@ -54,6 +54,13 @@ body {
     background-size: 100% 100%;
 }
 
+#ajuda img {
+    /* margin-top: -5px; */
+    border-radius: 20px;
+    width: 600px;
+    height: 198px;
+}
+
 #smartPhone {
     margin-top: 10px;
     margin-left: 100px;

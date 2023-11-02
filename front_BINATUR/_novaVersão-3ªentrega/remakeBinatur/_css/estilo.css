@@ -168,6 +168,18 @@
     width: 180px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
+
+#btnTemp {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 13pt;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+} 
 /*Fim - Barra de pacotes.*/
 /*==================================================================================================================================*/
 
@@ -548,7 +560,21 @@ section#promocoes #breadPromo a {
     color: #fff;
 }
 
+.btn-outline-light a {
+    text-decoration: none;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
 .btn-outline-light:hover {
+    background-color: #fff;
+    /* Cor de fundo do botão no hover */
+    color: #000;
+    /* Cor do texto do botão no hover */
+}
+
+.btn-outline-light a:hover {
     background-color: #fff;
     /* Cor de fundo do botão no hover */
     color: #000;
@@ -776,6 +802,13 @@ section#institucional{
     background-image: url('../_img/_imgInstitucional/ajuda2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+#ajuda img {
+    /* margin-top: -5px; */
+    border-radius: 20px;
+    width: 600px;
+    height: 198px;
 }
 
 #smartPhone {
