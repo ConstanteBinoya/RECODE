@@ -36,6 +36,62 @@
 
 <body>
     <div id="interface">
+
+        <!-- Modal -->
+        <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Olá, viajante! Já tem cadastro na Binatur?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <P>Desfrute de uma experiência completa na BinaTur, com acesso a ofertas especiais, dicas personalizadas e suporte dedicado. Se você ainda não é um membro, não perca tempo. Registre-se hoje mesmo e comece a explorar o mundo com todas as vantagens que a BinaTur tem a oferecer.</P>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="modalBtn" type="button" class="btn btn-primary">Eu quero!</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="row">
+                        <div id="imgModal" class="col">
+                            <img src="_img/_imgCadastro/modalCadastroBg.png"
+                                alt="Cadastre-se para uma experiência completa no site.">
+                        </div>
+                        <div id="modalCorpo" class="col-md-8">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Seja bem-vindo!<br> Já tem cadastro na
+                                    Binatur?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <P>Desfrute de uma experiência completa na BinaTur, com acesso a ofertas especiais,
+                                    dicas
+                                    personalizadas e suporte dedicado. Se você ainda não é um membro, não perca tempo.
+                                    Registre-se hoje mesmo e comece a explorar o mundo com todas as vantagens que a
+                                    BinaTur
+                                    tem a oferecer.</P>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="modalBtn" type="button" class="btn btn-primary">Eu quero!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Fim - Modal. -->
+
         <header id="cabecalho">
             <!--Nav-bar com bootstrap:=============================================================================================== -->
             <div class="container-fluid" id="cabecalhoSup">
@@ -940,6 +996,17 @@
     </div><!--Interface-->
 
     <script src="_js/funcoes.js"></script>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+                keyboard: false
+            });
+            setTimeout(function () {
+                myModal.show();
+            }, 2000);
+        });
+    </script> -->
 
 </body>
 
