@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(205, 203, 203);
+    color: rgb(36, 31, 77);
+}
+
+div#interface {
+    width: 1100px;
+    background-color: #ffffff;
+    margin: -20px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabecalho span.bi-blue {
+    color: rgb(0, 157, 255);
+}
+
+header#cabecalho span.na-orange {
+    color: rgb(255, 136, 0);
+}
+
+header#cabecalho span.tur-red {
+    color: rgb(213, 2, 2);
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1000px;
+    top: 35px;
+}
+
+header#cabecalho img#logoMarca {
+    position: absolute;
+    top: 30px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background-image: url("_2.FundoHome.png");
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px 1px 1px 1px;
+}
+
+header#cabecalho h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36pt;
+    color: #606060;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    padding: 0px 0px 0px 130px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    color: #ffffff;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, .6);
+    padding: 0px 0px 0px 130px;
+    margin-top: 0px;
+}
+
+/*Formatação de Imagens com Legendas*/
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 2px 2px 2px black;
+}
+
+figure.foto-legenda img {
+    width: 50%;
+    height: 50%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/*Formatação do Menu*/
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 695px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #03afe3;
+    padding: 6px;
+    margin: 2px;
+    transition: background-color 1s;
+    border-radius: 10%;
+}
+
+nav#menu li:hover {
+    background-color: #04799d;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, .6);
+}
+
+nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+section#corpo {
+    display: block;
+    width: 700px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo';
+    font-size: 20pt;
+    color: rgb(0, 38, 255);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita {
+    text-align: right;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #a6a0a0;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color: #606060;
+}
+
+table#tabelaspac {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspac td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tabelaspac td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: right;
+}
+
+table#tabelaspac td.cd {
+    background-color: #cecece;
+}
+
+table#tabelaspac caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspac caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #ccc7c7;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1 {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font

@@ -1,0 +1,9 @@
+###CONSIDERAÇÕES DO ALUNO:
+ 
+JAVA / CRUD:
+A pesar dos Modelos de Banco de Dados (conceitual, lógico e físico), bem como a UML (diagrama de classes) terem sido bastante densas e teoricamente completas - salvo meu status de aluno - na hora de aplicar o CRUD em jAVA tive muitas dificuldades para efetuar a impplantação: foram exatos doze dias de erros e desespero, por isso - excepcionalmente - o projeto do JAVA-CRUD atua sobre um banco de dados mais simples, para garantir a entrga dentro do prazo.
+Quanto a estrutura de pacotes e classes - específicamente - no pacote "main" achei mais confortável a criação de uma classe-main para manipular cada umas das classes-model, entretanto, adicionei uma quarta classe chamada "MasterMain" para a manipulação geral dos modelos.
+
+
+Respeitosamente,
+Constante Binoya.

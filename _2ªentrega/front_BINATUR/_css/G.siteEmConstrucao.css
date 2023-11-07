@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*Tentativa de RESPONSIVIDADE*/
+
+/* Dispositivos até 768px de largura */
+@media (max-width: 768px) {
+    div#interface {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header#cabecalho img#icone {
+        left: 90%;
+    }
+
+    nav#menu ul {
+        left: 40%;
+    }
+
+    section#corpo {
+        width: 100%;
+    }
+
+    article#noticia-principal div#jornadaInesquecivel img {
+        width: 100%;
+    }
+
+    div#pai .pLadoALado {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    aside#lateral div#aside-parte2 {
+        width: 100%;
+    }
+}
+
+/* Dispositivos até 480px de largura */
+@media (max-width: 480px) {
+    header#cabecalho img#icone {
+        left: 80%;
+    }
+
+    nav#menu ul {
+        left: 30%;
+    }
+
+    article#noticia-principal div#jornadaInesquecivel img {
+        width: 100%;
+    }
+
+    div#pai .pLadoALado {
+        flex: 0 0 100%;
+    }
+}
+
+/*Tentativa de RESPONSIVIDADE*/
+
+body img#manutencao {
+    position: relative;
+    margin-left: 240px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Bina-Tur</title>
+    <meta name="description" content="Conheça a Binatur, a agência de viagens brasileira que transforma sonhos em realidade! 
+    Explore destinos nacionais e internacionais com conforto, qualidade e excelência em todos os aspectos. Descubra o mundo e 
+    viva experiências inesquecíveis com a Binatur."> <!--SEO-->
+    <link rel="stylesheet" type="text/CSS" href="../_css/A.estilo.css">
+    <link rel="stylesheet" type="text/CSS" href="../_css/F.faleConosco.css">
+</head>
+
+<script language="javascript" src="../_js/_A.funcoes.js"></script>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1><span class="bi-blue">Bi</span><span class="na-orange">na</span><span class="tur-red">Tur</span>
+                </h1>
+                <h2>A sua agência de Viagens - INTELIGENTE</h2>
+            </hgroup>
+
+            <img id="logoMarca" src="../_imagens/_1.logoBinaTur.png" alt="Logo Marca da Bina-Tur" />
+
+            <img id="icone" src="../_imagens/_8.contato.png" alt="Ícone da home" />
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('../_imagens/_4.home.png')" onmouseout="mudaFoto('../_imagens/_8.contato.png')">
+                        <a href="../1.index.html">Home</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../_imagens/_5.destinoLogo.png')" onmouseout="mudaFoto('../_imagens/_8.contato.png')">
+                        <a href="3.destino.html">Serviços</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../_imagens/_6.promocoes.png')" onmouseout="mudaFoto('../_imagens/_8.contato.png')">
+                        <a href="4.promocoes.html">Promoções</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../_imagens/_7.multimidia.png')" onmouseout="mudaFoto('../_imagens/_8.contato.png')">
+                        <a href="5.multmidia.html">Multimídia</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../_imagens/_8.contato.png')" onmouseout="mudaFoto('../_imagens/_8.contato.png')">
+                        <a href="6.faleConosco.html">Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!--conteudo da page Fale conosco-->
+
+        <h1 id="ajuda">Como podemos ajudar?</h1>
+
+        <div class="search-form">
+            <label class="search-label" for="searchInput"></label>
+            <input type="text" id="searchInput" class="search-input"
+                placeholder="Escreva uma palavra sobre o que você busca. Ex: Cancelamento, alterações, cobranças...">
+            <button class="search-button">Buscar</button>
+        </div>
+
+        <h2 id="categoria">Categorias mais buscadas</h2>
+
+        <div id="imgCategoria">
+            <a class="categoriaLink" href="7.siteEmConstrucao.html"><img src="../_imagens/_46.ajuda.png" alt="gambiarra"></a>
+            <a class="categoriaLink" href="7.siteEmConstrucao.html"><img src="../_imagens/_47.ajuda.png" alt="gambiarra"></a>
+            <a class="categoriaLink" href="7.siteEmConstrucao.html"><img src="../_imagens/_48.ajuda.png" alt="gambiarra"></a>
+            <a class="categoriaLink" href="7.siteEmConstrucao.html"><img src="../_imagens/_49.ajuda.png" alt="gambiarra"></a>
+        </div>
+
+        <h2 id="naoEncontrou">Ainda não encontrou o que estava buscando?</h2>
+        <h3 id="consultor">Fale com um de nossos consultores</h3>
+
+        <form class="contact-form" action="#" method="post">
+            <label class="form-label" for="nameInput">Nome:</label>
+            <input type="text" id="nameInput" class="form-input" name="name" placeholder="Digite seu nome" required>
+
+            <label class="form-label" for="emailInput">Email:</label>
+            <input type="email" id="emailInput" class="form-input" name="email" placeholder="Digite seu email" required>
+
+            <label class="form-label" for="phoneInput">Telefone:</label>
+            <input type="tel" id="phoneInput" class="form-input" name="phone" placeholder="Digite seu telefone"
+                required>
+
+            <label class="form-label" for="questionInput">Dúvida:</label>
+            <textarea id="questionInput" class="form-input" name="question" rows="4" placeholder="Digite sua dúvida"
+                required></textarea>
+
+            <button type="submit" class="form-button">Enviar</button>
+        </form>
+
+        <!--conteudo da page Fale conosco-->
+
+        <footer id="rodape">
+            <p>Copyright 2023 - by Constante Binoya <br /></p>
+            <div class="imgGroup">
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_16.facebook.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_17.instagram.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_18.twiter.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_19.youtobe.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_20.pinterest.png"></a>
+            </div>
+            <p id="endereco">BINATUR Brasil Operadora e Agência de Viagens S.A - CNPJ: 27.701.521/0001-22 Rua Walfrido
+                Lins de Moraes, 387, 2º andar, sala 209 | Bairro Janga, Paulista - PE CEP: 53437-100</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/*Tentativa de RESPONSIVIDADE*/
+
+/* Dispositivos até 768px de largura */
+@media (max-width: 768px) {
+    div#interface {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header#cabecalho img#icone {
+        left: 90%;
+    }
+
+    nav#menu ul {
+        left: 40%;
+    }
+
+    section#corpo {
+        width: 100%;
+    }
+
+    article#noticia-principal div#jornadaInesquecivel img {
+        width: 100%;
+    }
+
+    div#pai .pLadoALado {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    aside#lateral div#aside-parte2 {
+        width: 100%;
+    }
+}
+
+/* Dispositivos até 480px de largura */
+@media (max-width: 480px) {
+    header#cabecalho img#icone {
+        left: 80%;
+    }
+
+    nav#menu ul {
+        left: 30%;
+    }
+
+    article#noticia-principal div#jornadaInesquecivel img {
+        width: 100%;
+    }
+
+    div#pai .pLadoALado {
+        flex: 0 0 100%;
+    }
+}
+
+/*Tentativa de RESPONSIVIDADE*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 38px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    margin-top: 3px;
+}
+
+h2 {
+    color: #555;
+    font-size: 18px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+div#ofertas h2#pacotes {
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+div#ofertas h4#titleLogin a {
+    position: absolute;
+    margin-left: 790px;
+    margin-top: 10px;
+    color: #070abb;
+    font-size: 15px;
+
+}
+
+div#ofertas p#pagamento {
+    font-size: 13pt;
+    color: #333;
+    text-indent: 0;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, .6);
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 560px;
+}
+
+div#ofertas img#login {
+    position: absolute;
+    margin-left: 750px;
+}
+
+div#ofertas img#imgCards {
+    position: absolute;
+    margin-top: 105px;
+    margin-left: 550px;
+    width: 500px;
+
+}
+
+.carousel2 {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: -30px;
+}
+
+.slide2 img {
+    width: 500px;
+    border-radius: 8px;
+}
+
+a.imperdiveis img {
+    display: inline-block;
+    width: 330px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+}

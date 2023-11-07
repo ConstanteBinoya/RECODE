@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Bina-Tur</title>
+    <meta name="description" content="Conheça a Binatur, a agência de viagens brasileira que transforma sonhos em realidade! 
+    Explore destinos nacionais e internacionais com conforto, qualidade e excelência em todos os aspectos. Descubra o mundo e 
+    viva experiências inesquecíveis com a Binatur."> <!--SEO-->
+    <link rel="stylesheet" type="text/CSS" href="../_css/A.estilo.css">
+    <link rel="stylesheet" type="text/CSS" href="../_css/B.cadastro-login.css">
+</head>
+
+<script language="javascript" src="../_js/_A.funcoes.js"></script>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1><span class="bi-blue">Bi</span><span class="na-orange">na</span><span class="tur-red">Tur</span>
+                </h1>
+                <h2>A sua agência de Viagens - INTELIGENTE</h2>
+            </hgroup>
+
+            <img id="logoMarca" src="../_imagens/_1.logoBinaTur.png" alt="Logo Marca da Bina-Tur" />
+
+            <img id="icone" src="../_imagens/_3.homeMala.png" alt="Ícone da home" />
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('../_imagens/_4.home.png')"
+                        onmouseout="mudaFoto('../_imagens/_3.homeMala.png')">
+                        <a href="../1.index.html">Home</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../_imagens/_5.destinoLogo.png')"
+                        onmouseout="mudaFoto('../_imagens/_3.homeMala.png')">
+                        <a href="3.destino.html">Serviços</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../_imagens/_6.promocoes.png')"
+                        onmouseout="mudaFoto('../_imagens/_3.homeMala.png')">
+                        <a href="4.promocoes.html">Promoções</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../_imagens/_7.multimidia.png')"
+                        onmouseout="mudaFoto('../_imagens/_3.homeMala.png')">
+                        <a href="5.multmidia.html">Multimídia</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../_imagens/_8.contato.png')"
+                        onmouseout="mudaFoto('../_imagens/_3.homeMala.png')">
+                        <a href="../_imagens/_6.promocoes.png">Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="cadastro">
+            <h2>BinaTur - viva Experiências Únicas!</h2>
+            <form id="formulario" action="7.siteEmConstrucao.html" method="POST">
+                <!-- O atributo action no elemento <form> 
+                define para onde os dados do formulário serão 
+                enviados quando o usuário clicar em "Enviar"-->
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+                <!--required em cada campo indica que os campos são 
+                obrigatórios, e o formulário não será enviado se algum 
+                deles estiver vazio.-->
+
+                <label for="nome">Sobrenome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="data_nascimento">Data de Nascimento</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"
+                    required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                    placeholder="(00) 00000-0000" required>
+
+                <input type="submit" value="Enviar">
+                <!-- botão de envio para que o usuário possa enviar o formulário.-->
+            </form>
+        </div>
+        <footer id="rodape">
+            <p>Copyright 2023 - by Constante Binoya <br /></p>
+            <div class="imgGroup">
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_16.facebook.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_17.instagram.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_18.twiter.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_19.youtobe.png"></a>
+                <a href="7.siteEmConstrucao.html"><img src="../_imagens/_20.pinterest.png"></a>
+            </div>
+            <p id="endereco">BINATUR Brasil Operadora e Agência de Viagens S.A - CNPJ: 27.701.521/0001-22 Rua Walfrido
+                Lins de Moraes, 387, 2º andar, sala 209 | Bairro Janga, Paulista - PE CEP: 53437-100</p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

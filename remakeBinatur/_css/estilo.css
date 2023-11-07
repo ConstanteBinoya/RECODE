@@ -1,0 +1,998 @@
+@charset "UTF-8";
+
+/* Modal - Cadastre-se:*/
+#contentM1 {
+    width: 600px;
+    margin-left: -60px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+#imgModal img {
+    margin-top: 50px;
+    margin-left: 13px;
+    width: 170px;
+    height: 250px;
+}
+
+#modalCorpo h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 20pt;
+    color: #666666;
+}
+
+#modalCorpo p {
+    color: #666666;
+}
+
+#modalCorpo #modalBtn {
+    font-weight: bold;
+}
+
+#contentM2 {
+    width: 650px;
+    height: 360px;
+    margin-left: -70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);;
+}
+
+.modal-body #visita {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.modal-body #avaliacao {
+    margin-top: 50px;
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.modal-body #modalBtnVisitante, #modalBtnAvaliador {
+    width: 120px;
+    margin-left: 250px;  
+}
+/*Fim - Modal - Cadastre-se:*/
+/*==================================================================================================================================*/
+
+/*Área do navbar: ====================================================================================================================*/
+#cabecalhoSup {
+    width: 100%;
+    background-color: #ffffff;
+    border: solid 1px #cac2c2c9;
+    position: fixed;
+    /*A propriedade position: fixed; tornará a barra de navegação fixa no topo da página.*/
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 1000;
+    /*A propriedade z-index é usada para controlar a ordem de empilhamento, certificando-se de que a barra de navegação esteja acima de outros elementos na página. O top: 0;, left: 0; e right: 0; definem a posição exata no topo da página.*/
+}
+
+#cabecalhoSup li {
+    font-weight: bold;
+}
+
+#cabecalhoSup a.dropdown-item {
+    text-decoration: #000000;
+}
+
+/*Fim - Área do navbar: ==============================================================================================================*/
+
+/*Barra das tags de serviços:*/
+#tagServico {
+    border: solid 1px #cac2c2c9;
+    margin-top: 50px;
+    padding: 4px;
+}
+
+#tagServico a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    color: #080808;
+}
+
+/*Fim - Barra das tags de serviços*/
+/*==================================================================================================================================*/
+
+/*Alert de "FAÇA SEU CADASTRO JÁ!":*/
+.alert-custom {
+    background-color: #2970f5;
+    border-color: #c5c2c2c0;
+    height: 60px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.text-custom {
+    margin-top: -5px;
+    margin-left: 150px;
+    color: #ffffff;
+}
+
+.text-custom strong {
+    font-size: 15pt;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, .6);
+}
+
+#alerta a {
+    color: #ffffff;
+}
+
+/* Estilos para telas menores (rescurso alternativo: não consegui apenas com o bootstrap e suas classes) */
+@media (max-width: 767px) {
+    .text-custom {
+        margin-left: 0; /* Remove a margem esquerda em telas menores */
+    }
+    
+    .text-custom strong {
+        font-size: 12pt; /* Reduza o tamanho do texto forte em telas menores */
+    }
+}
+/*Fim - Alert de "FAÇA SEU CADASTRO JÁ!".*/
+/*==================================================================================================================================*/
+
+/*Barra de pacotes:*/
+#pacoteForm {
+    background-image: url('../_img/bannerHome2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  /* Altura correspondendo ao contêiner, largura ajustada automaticamente */
+    width: 100%;
+    height: 330px;
+    padding-top: 30px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#p-fInterno {
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 140px;
+    padding-top: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#pacoteForm h5 {
+    font-size: 30px;
+    color: #888888;
+    margin-top: -15px;
+}
+
+#pacoteForm .form-label {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+    color: #666666;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#pacoteForm .form-control {
+    margin-top: 0px;
+    font-size: 10pt;
+    font-style: italic;
+    color: #666666;
+    height: 40px;
+}
+
+#pacoteForm button {
+    margin-top: 25px;
+    height: 50px;
+}
+
+#pacoteForm #partida {
+    background-image: url('../_img/aviaoForm.png');
+    background-repeat: no-repeat;
+    background-size: 15% 70%;
+    background-position: 2px;
+}
+
+#pacoteForm #destino {
+    background-image: url('../_img/tagForm.png');
+    background-repeat: no-repeat;
+    background-size: 15% 70%;
+    background-position: 2px;
+}
+
+#pacoteForm #quarto {
+    background-image: url('../_img/quartoForm.png');
+    background-repeat: no-repeat;
+    background-size: 25% 70%;
+    background-position: 30px;
+}
+
+#pacoteForm #hospedes {
+    background-image: url('../_img/pessoasForm.png');
+    background-repeat: no-repeat;
+    background-size: 20% 70%;
+    background-position: 30px;
+}
+
+#partida::placeholder {
+    padding-left: 30px;
+}
+
+#destino::placeholder {
+    padding-left: 30px;
+}
+
+#pacoteForm button {
+    font-weight: bold;
+    width: 180px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#btnTemp {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 13pt;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+} 
+/*Fim - Barra de pacotes.*/
+/*==================================================================================================================================*/
+
+/*Banner da Home:*/
+#bannerHome {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#bannerHome img {
+    width: 102%;
+    height: 350px;
+    margin-left: -15px;
+}
+
+/*Fim - Banner da Home.*/
+/*==================================================================================================================================*/
+
+/*Alert Bina-Club:*/
+#alertaClub .alert-custom {
+    background-image: url('../_img/alertaClub.png');
+    border-color: #c5c2c2c0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+    height: 70px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.alert-icon {
+    height: 40px;
+    margin-left: 10px;
+}
+
+#alertaClub .text-custom {
+    color: #ffffff;
+}
+
+#alertaClub .text-custom strong {
+    font-size: 18pt;
+}
+
+#alertaClub p {
+    font-size: 14pt;
+}
+
+#alertaClub img {
+    height: 60px;
+    margin-top: -5px;
+    margin-left: 100px;
+}
+
+#alertaClub #buttonClub {
+    background-color: #fa1c41;
+    color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 35px;
+    margin-top: -15px; 
+    width: 200px;
+    margin-right: 10px;
+    height: 45px;
+}
+
+/* Estilos para telas menores (responsivo) */
+@media (max-width: 767px) {
+    #alertaClub .text-custom strong {
+        font-size: 18pt;
+    }
+
+    #alertaClub p {
+        font-size: 14pt;
+    }
+
+    #buttonClub {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+/*Fim - Alert Bina-Club.*/
+/*==================================================================================================================================*/
+
+/*Breadcrumb agência de viagens:*/
+section#promocoes #breadPromo {
+    position: relative;
+    margin-top: 50px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+section#promocoes #breadPromo a {
+    text-decoration: none;
+}
+
+/*Breadcrumb Institucional:*/
+#breadInstitucional {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: -120px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+#breadInstitucional a{
+    text-decoration: none;
+}
+/*Fim - Breadcrumb Institucional.*/
+
+/* Breadcrumb Footer: */
+#breadFooter {
+    margin-top: 30px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+#breadFooter a{
+    text-decoration: none;
+}
+/*Fim -  Breadcrumb Footer: */
+/*==================================================================================================================================*/
+
+/*Logo com slogan:*/
+#logoSloganAzul img {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    margin-top: -60px;
+    margin-left: 560px;
+}
+
+/*Fim - BLogo com slogan.*/
+/*==================================================================================================================================*/
+
+/*Título da parte secundária (BinaTur - Agência de viagens):*/
+#agenciaViagem {
+    position: relative;
+    margin-top: 0px;
+}
+
+#agenciaViagem h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #444444;
+}
+
+#agenciaViagem p {
+    font-size: 10.5pt;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #444444;
+    margin-top: 25px;
+}
+
+/*Título da parte secundária (BinaTur - Agência de viagens).*/
+/*==================================================================================================================================*/
+
+/*Alert datas comemorativas:*/
+#alertaPromoSazonal .alert-custom {
+    background-image: url('../_img/alertaPromo.png');
+    border-color: #c5c2c2c0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+    height: 70px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#alertaPromoSazonal .text-custom {
+    color: #ffffff;
+}
+
+#alertaPromoSazonal .text-custom strong {
+    font-size: 20pt;
+    margin-left: -60px;
+}
+
+#alertaPromoSazonal p {
+    font-size: 15pt;
+}
+
+#alertaPromoSazonal img {
+    height: 60px;
+    margin-top: -7px;
+}
+
+#alertaPromoSazonal #buttonPromo {
+    background-color: #fa1c1c;
+    color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 35px;
+    margin-top: -30px;
+    margin-right: 10px;
+    width: 150px;
+    height: 45px;
+}
+
+/*Fim - Alert datas comemorativas.*/
+/*==================================================================================================================================*/
+
+/*Cards de datas Comamorativas:*/
+#promoFesta {
+    margin-bottom: -100px;
+}
+
+#crianca img {
+    width: 650px;
+    height: 200px;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 20px;
+    border-radius: 20px; 
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+#halloween img {
+    width: 650px;
+    height: 200px;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 10px;
+    border-radius: 20px; 
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+/*Fim - Cards de datas Comamorativas:*/
+/*==================================================================================================================================*/
+
+/*Cabeçalho da área de descontos:*/
+#destinosDesconto {
+    margin-top: 150px;
+}
+
+/*Fim - Cabeçalho da área de descontos*/
+/*==================================================================================================================================*/
+
+/*Cabeçalho dos Cards*/
+#destinosDesconto h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #444444;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#destinosDesconto strong {
+    font-size: 12pt;
+}
+
+#destinosDesconto {
+    font-size: 10pt;
+    color: #000000;
+}
+
+/*Fim - Cabeçalho dos Cards*/
+/*==================================================================================================================================*/
+
+/*BTN's troca de destinos:*/
+#btnNacionalidade {
+    margin-bottom: -60px;
+}
+
+#btnNacional {
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 120px;
+    margin-left: -140px;
+    border: solid 1px #777474;
+    color: #777474;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+    /* Transição de cores no hover */
+}
+
+#btnInternacional {
+    position: relative;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 120px;
+    margin-top: -115px;
+    margin-left: 99px;
+    border: solid 1px #777474;
+    color: #777474;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+    /* Transição de cores no hover */
+}
+
+#btnNacional.active, #btnInternacional.active {
+    border-color: #0815c9;
+    background-color: rgba(4, 91, 252, 0.3); /* Cor de fundo ativa */
+    font-weight: bold;
+    color: #0206fc; /* Cor do texto ativo */
+}
+
+#btnNacional:hover, #btnInternacional:hover {
+    font-weight: bold;
+    background-color: rgba(80, 78, 78, 0.3); /* Cor de fundo ao passar o cursor (pode ajustar a tonalidade) */
+    color: #fff; /* Cor do texto ao passar o cursor */
+}
+/*Fim - BTN's troca de destinos.*/
+/*==================================================================================================================================*/
+
+/*Cards Promocionais:*/
+.ladoALado {
+    display: inline-block;
+
+}
+
+.custom-card {
+    width: 290px;
+    height: 300px;
+    position: relative;
+    background-color: #000;/* Cor de fundo da imagem escurecida */
+    color: #fff;
+    overflow: hidden; /* Oculta conteúdo que extrapola o cartão */
+    transition: transform 0.3s;/* Adiciona uma transição suave no efeito de zoom */
+    margin: 15px;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+.custom-card h5 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.custom-card .textoA {
+    font-size: 10pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-card .textoA span.riscado {
+    font-size: 8pt;
+}
+
+.custom-card .textoA del {
+    font-size: 13pt;
+}
+
+.custom-card .textoB {
+    font-size: 13pt;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif
+}
+
+.custom-card .textoB span {
+    font-size: 25pt;
+}
+
+.custom-card:hover {
+    transform: scale(1.09); /* Efeito de zoom no hover */
+}
+
+.card-img {
+    opacity: 0.5; /* Opacidade da imagem */
+    width: 110%;
+    height: 100%;
+    margin-left: -12px;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-light a {
+    text-decoration: none;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    /* Cor de fundo do botão no hover */
+    color: #000;
+    /* Cor do texto do botão no hover */
+}
+
+.btn-outline-light a:hover {
+    background-color: #fff;
+    /* Cor de fundo do botão no hover */
+    color: #000;
+    /* Cor do texto do botão no hover */
+}
+
+/*Fim - Cards Promocionais.*/
+/*==================================================================================================================================*/
+
+/*BTN - ver todas as ofertas:*/
+#btnTodasPromocoes {
+    margin-top: 15px;
+    margin-left: 530px;
+}
+
+#btnTodasPromocoes button{
+    width: 300px;
+    border-radius: 20px;
+}
+
+#btnTodasPromocoes a {
+    text-decoration: none;
+    color: #fa1c1c;
+}
+
+#btnTodasPromocoes button:hover {
+    background-color: rgba(252, 4, 4, 0.3);
+}
+
+#btnTodasPromocoes button:hover a {
+    color: #ffffff;
+    font-weight: bold;
+}
+/*Fim - BTN - ver todas as ofertas.*/
+/*==================================================================================================================================*/
+
+/* Quem somos, Missão, Visão e Valores: */
+section#institucional{
+    margin-top: 80px;
+    background-color: #faf5f5e1;
+    box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.5), 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+#quemSomos img{
+    width: 95%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+#mvv .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Isso cria 3 colunas com tamanhos iguais */
+    gap: 10px; /*No contexto de 'grid' o 'gap' serve como margin*/
+}
+
+#mvv {
+    margin-left: 20px;
+}
+
+#mvv img {
+    border: solid 1px #888888;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+/* fim - Quem somos, Missão, Visão e Valores. */
+/*==================================================================================================================================*/
+
+#centralOfertas.row {
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+/*Card - Central de Ajuda:*/
+#centralAjuda .card {
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+} 
+
+#centralAjuda .card img {
+    height: 150px;
+    border-radius: 10px;
+}
+/*Fim - Card - Central de Ajuda:*/
+/*==================================================================================================================================*/
+
+/*Card - Receba Ofertas:*/
+#cardOfertas.card {
+    background-image: url('../_img/_imgInstitucional/recebaOfertas.png');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 700px;
+    height: 150px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+.form-group {
+    margin-top: 50px;
+    width: 210px;
+}
+
+.form-group ::placeholder {
+    color: #000000;
+}
+
+.form-group #email {
+    margin-left: 60px;
+    height: 50px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+.form-group #nome {
+    height: 50px;
+    margin-left: 55px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+#cardOfertas button#btnRecebaOfertas {
+    margin-top: 50px;
+    border-radius: 30px;
+    margin-left: 80px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+/*Fim - Card - Receba Ofertas:*/
+/*==================================================================================================================================*/
+
+/*Dúvidas frequentes:*/
+#duvidas {
+    margin-top: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #555555;
+}
+
+#duvidas hgroup {
+    margin-top: 30px;
+}
+
+#duvidas h4 {
+    font-size: 15pt;
+}
+
+#duvidas hgroup h5 {
+    font-size: 15pt;
+    margin-left: 30px;
+}
+
+#paragrafoDuvidas {
+    margin-top: 10px;
+}
+
+#paragrafoDuvidas p {
+    font-size: 10.5pt;
+    text-align: justify;
+    margin-left: 30px;
+}
+/*Fim - Dúvidas frequentes*/
+/*==================================================================================================================================*/
+
+/*Textos das "chamadas comerciais":*/
+#chamadas {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #555555;
+}
+
+#chamadas .row h5 {
+    margin-top: 30px;
+}
+
+#chamadas .row h6 {
+    margin-top: 30px;
+}
+
+#chamadas .row p {
+    margin-top: 10px;
+    font-size: 10.5pt;
+}
+/*Fim - Textos das "chamadas comerciais"*/
+/*==================================================================================================================================*/
+
+/*Footer - container principal:*/
+#rodape {
+    margin-top: 30px;
+    box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.6);  /*Sombra na borda superior de um container*/ 
+}
+
+#logo2 {
+    margin-top: 20px;
+    width: 350px;
+    height: 175px;
+}
+/*Fim - Footer - container principal.*/
+/*==================================================================================================================================*/
+
+/*Serviços no Roda-pè*/
+#servicosRodape {
+    margin-top: 50px;
+}
+
+#servicosRodape hgroup a {
+    text-decoration: none;
+    color: #888888;
+}
+/*Fim - Serviços no Roda-pè*/
+/*==================================================================================================================================*/
+
+/*Footer - central de ajudas:*/
+#ajudaApp {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+#ajuda {
+    flex: 3;
+    border-radius: 20px;
+    width: 800px;
+    height: 200px;
+    margin-left: 100px;
+    background-image: url('../_img/_imgInstitucional/ajuda2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#ajuda img {
+    /* margin-top: -5px; */
+    border-radius: 20px;
+    width: 600px;
+    height: 198px;
+}
+
+#smartPhone {
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    background-image: url('../_img/_imgFooter/smartPhone.png');
+    background-repeat: no-repeat;
+    background-size: 40% 90%;
+}
+
+#andriodAple {
+    display: flex;
+    flex-direction: column;
+}
+
+#android {
+    width: 250px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: -130px;
+    background-image: url('../_img/_imgFooter/android.png');
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+}
+
+#aple {
+    width: 250px;
+    height: 100px;
+    margin-top: -20px;
+    margin-left: -123px;
+    background-image: url('../_img/_imgFooter/aple.png');
+    background-repeat: no-repeat;
+    background-size: 80% 90%;
+}
+/*Fim - Footer - central de ajudas.*/
+/*==================================================================================================================================*/
+
+/* Formas de Pagamento:*/
+#formPg {
+    margin-top: 30px;
+}
+
+#formPg h4 {
+    font-size: 15pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #555555;
+}
+
+#formPg p {
+    margin-top: 20px;
+    font-size: 11pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #555555;
+}
+
+#formPg img {
+    margin-top: -10px;
+    width: 700px;
+}
+/*Fim - Formas de Pagamento.*/
+/*==================================================================================================================================*/
+
+/* Chamada Final - Ultimo texto comercial:*/
+#chamadaFinal {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 11pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #555555;
+}
+
+/*Fim - Chamada Final - Ultimo texto comercial*/
+/*==================================================================================================================================*/
+
+/*Bloco - barra de serviços do Footer:*/
+#navBloco  {
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+#navBloco h5 {
+    font-size: 11pt;   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #4e4e4e;
+}
+
+#navBloco a {
+    text-decoration: none;
+    font-size: 10pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #555555;
+}
+/*Fim - Bloco - barra de serviços do Footer*/
+/*==================================================================================================================================*/
+
+/*Bloco - redes Sociais: */
+#rsTitulo {
+    margin-top: 50px;
+}
+
+#rSocial img {
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 417px;
+}
+/*Fim - Bloco - redes Sociais*/
+/*==================================================================================================================================*/
+
+/*  */
+#encerramento {
+    margin-top: 20px;
+    border-top: solid 1px #666666;
+}
+
+#encerramento #cnpj p {
+    margin-top: 10px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+#encerramento #esclarecimentos p {
+    font-size: 8pt;
+    margin-left: 26px;
+}
+/*Fim - */
+/*==================================================================================================================================*/
+
+/*  */
+/*Fim - */
+/*==================================================================================================================================*/
