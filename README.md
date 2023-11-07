@@ -15,7 +15,8 @@ Este projeto é o resultado de uma entrega acadêmica para a **RECODE Pro**. A m
 
 ### :eight_spoked_asterisk: [_*Backtend*_:]():exploding_head::exploding_head::exploding_head:
 * Lógica de programação em Portugol;
-* CRUD com JAVA.
+* CRUD com JAVA;
+* ServLet com JAVA (eclipse).
 ---
 
 ### :eight_spoked_asterisk: [**Modelagem de Dados**:]():heart_eyes::heart_eyes::heart_eyes:
