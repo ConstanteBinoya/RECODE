@@ -13,10 +13,10 @@ Este projeto é o resultado de uma entrega acadêmica para a **RECODE Pro**. A m
 * BootStrap.
 ---
 
-### :eight_spoked_asterisk: [_*Backtend*_:]():exploding_head::exploding_head::exploding_head:
+### :eight_spoked_asterisk: [_*Backtend*_:]():scream::exploding_head::scream::exploding_head::scream::exploding_head:
 * Lógica de programação em Portugol;
-* CRUD com JAVA;
-* ServLet com JAVA (eclipse).
+* CRUD com JAVA; :exploding_head::exploding_head::exploding_head:
+* ServLet com JAVA (eclipse). :scream::scream::scream:
 ---
 
 ### :eight_spoked_asterisk: [**Modelagem de Dados**:]():heart_eyes::heart_eyes::heart_eyes:
