@@ -37,17 +37,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   //Fim - Lógica para p btn Visitante direcionar para a página de cadastro demonstrativo. =============================================
 
-  // Lógica para p btn Visitante direcionar para a página de cadastro demonstrativo: ====================================================
+  // Lógica para p btn Avaliador para a página de cadastro servlet: ====================================================
 document.addEventListener('DOMContentLoaded', function() {
     // Selecione o botão pelo id
     var modalBtnAvaliador = document.getElementById('modalBtnAvaliador');
     // Adicione um ouvinte de evento de clique
     modalBtnAvaliador.addEventListener('click', function() {
       // Redirecione o usuário para a página desejada, por exemplo:
-      window.location.href = '_html/avaliador.html';
+      window.location.href = 'binacadastro.jsp';
     });
   });
-  //Fim - Lógica para p btn Visitante direcionar para a página de cadastro demonstrativo. =============================================
+  //Fim - Lógica para p btn Avaliador para a página de cadastro servlet. =============================================
 
 // Lógica para o funcionamento troca de nacionalidade (alternância dos cards promocionais): ===========================================
 document.addEventListener("DOMContentLoaded", function () {

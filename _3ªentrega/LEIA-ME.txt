@@ -1,8 +1,13 @@
 ###CONSIDERAÇÕES DO ALUNO:
  
-JAVA / CRUD:
-A pesar dos Modelos de Banco de Dados (conceitual, lógico e físico), bem como a UML (diagrama de classes) terem sido bastante densas e teoricamente completas - salvo meu status de aluno - na hora de aplicar o CRUD em jAVA tive muitas dificuldades para efetuar a impplantação: foram exatos doze dias de erros e desespero, por isso - excepcionalmente - o projeto do JAVA-CRUD atua sobre um banco de dados mais simples, para garantir a entrga dentro do prazo.
-Quanto a estrutura de pacotes e classes - específicamente - no pacote "main" achei mais confortável a criação de uma classe-main para manipular cada umas das classes-model, entretanto, adicionei uma quarta classe chamada "MasterMain" para a manipulação geral dos modelos.
+JAVA / CRUD / MVC / SERVLET:
+Nesta nova etapa do curso, foi solicitado a reformulação do site qu eserviu de basa para as entregas anteriores. Nesse sentido, persistiram as presenças de processos de Modelagem de Banco de Dados, aplicação do CRUD com Java e Controller com Servlet/Jsp também em Java, tudo isso dentro so modelo MVC - Modell, Vew e Controller.
+
+Esse tipo de estrutura permite uma experiência mai dinâmica ao usuário, que outrora apenas visualizava e navegava por links numa estrutura HTML, agora de fato é possível alimentar uma banco de dados e efetuar as dedidas alterações desejadas com o suporte do modelo MVC.
+
+Os desafios desta entrega permearam sob a - temporária - falta de experiência em manusear a ferramenta "eclipse" que demanda um conhecimento mais apurado no tocante a importações de pacotes e a própria manipulação geral da IDE.
+
+Portanto, apesar do árduo processo de confecção do projeto o resultado foi satisfatório em sua maioria e ascendeu uma luz de alerta sobre a necessidade de se aprofundar no assunto. Dito isto, novos projetos autodidatas serão produzidos a fim de aumentar a afinidade com o assunto a ponto de torna-lo usual.
 
 
 Respeitosamente,
