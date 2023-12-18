@@ -53,9 +53,9 @@
     margin-left: 250px;  
 }
 /*Fim - Modal - Cadastre-se:*/
-/*==================================================================================================================================*/
 
-/*Área do navbar: ====================================================================================================================*/
+
+/*Área do navbar:*/
 #cabecalhoSup {
     width: 100%;
     background-color: #ffffff;
@@ -77,7 +77,7 @@
     text-decoration: #000000;
 }
 
-/*Fim - Área do navbar: ==============================================================================================================*/
+/*Fim - Área do navbar: */
 
 /*Barra das tags de serviços:*/
 #tagServico {
@@ -94,7 +94,7 @@
 }
 
 /*Fim - Barra das tags de serviços*/
-/*==================================================================================================================================*/
+
 
 /*Alert de "FAÇA SEU CADASTRO JÁ!":*/
 .alert-custom {
@@ -132,7 +132,6 @@
     }
 }
 /*Fim - Alert de "FAÇA SEU CADASTRO JÁ!".*/
-/*==================================================================================================================================*/
 
 /*Barra de pacotes:*/
 #pacoteForm {
@@ -236,7 +235,6 @@
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 } 
 /*Fim - Barra de pacotes.*/
-/*==================================================================================================================================*/
 
 /*Banner da Home:*/
 #bannerHome {
@@ -251,7 +249,6 @@
 }
 
 /*Fim - Banner da Home.*/
-/*==================================================================================================================================*/
 
 /*Alert Bina-Club:*/
 #alertaClub .alert-custom {
@@ -318,7 +315,6 @@
     }
 }
 /*Fim - Alert Bina-Club.*/
-/*==================================================================================================================================*/
 
 /*Breadcrumb agência de viagens:*/
 section#promocoes #breadPromo {
@@ -357,7 +353,6 @@ section#promocoes #breadPromo a {
     text-decoration: none;
 }
 /*Fim -  Breadcrumb Footer: */
-/*==================================================================================================================================*/
 
 /*Logo com slogan:*/
 #logoSloganAzul img {
@@ -369,7 +364,6 @@ section#promocoes #breadPromo a {
 }
 
 /*Fim - BLogo com slogan.*/
-/*==================================================================================================================================*/
 
 /*Título da parte secundária (BinaTur - Agência de viagens):*/
 #agenciaViagem {
@@ -392,7 +386,6 @@ section#promocoes #breadPromo a {
 }
 
 /*Título da parte secundária (BinaTur - Agência de viagens).*/
-/*==================================================================================================================================*/
 
 /*Alert datas comemorativas:*/
 #alertaPromoSazonal .alert-custom {
@@ -438,7 +431,6 @@ section#promocoes #breadPromo a {
 }
 
 /*Fim - Alert datas comemorativas.*/
-/*==================================================================================================================================*/
 
 /*Cards de datas Comamorativas:*/
 #promoFesta {
@@ -465,7 +457,6 @@ section#promocoes #breadPromo a {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
 }
 /*Fim - Cards de datas Comamorativas:*/
-/*==================================================================================================================================*/
 
 /*Cabeçalho da área de descontos:*/
 #destinosDesconto {
@@ -473,7 +464,6 @@ section#promocoes #breadPromo a {
 }
 
 /*Fim - Cabeçalho da área de descontos*/
-/*==================================================================================================================================*/
 
 /*Cabeçalho dos Cards*/
 #destinosDesconto h1 {
@@ -493,7 +483,6 @@ section#promocoes #breadPromo a {
 }
 
 /*Fim - Cabeçalho dos Cards*/
-/*==================================================================================================================================*/
 
 /*BTN's troca de destinos:*/
 #btnNacionalidade {
@@ -541,12 +530,10 @@ section#promocoes #breadPromo a {
     color: #fff; /* Cor do texto ao passar o cursor */
 }
 /*Fim - BTN's troca de destinos.*/
-/*==================================================================================================================================*/
 
 /*Cards Promocionais:*/
 .ladoALado {
     display: inline-block;
-
 }
 
 .custom-card {
@@ -637,7 +624,6 @@ section#promocoes #breadPromo a {
 }
 
 /*Fim - Cards Promocionais.*/
-/*==================================================================================================================================*/
 
 /*BTN - ver todas as ofertas:*/
 #btnTodasPromocoes {
