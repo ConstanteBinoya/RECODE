@@ -30,13 +30,18 @@ public class Menu {
         int escolha;
 
         do {
-            System.out.println("\n***** MENU *****");
-            System.out.println("1. Adicionar Cliente");
-            System.out.println("2. Listar Clientes");
-            System.out.println("3. Editar Cliente");
-            System.out.println("4. Excluir Cliente");
-            System.out.println("0. Sair");
-            System.out.print("Escolha uma opção: ");
+            System.out.println("");
+            System.out.println("|======================|");
+            System.out.println("|######## MENU ########|");
+            System.out.println("|----------------------|");
+            System.out.println("| 1. Adicionar Cliente |");
+            System.out.println("| 2. Listar Clientes   |");
+            System.out.println("| 3. Editar Cliente    |");
+            System.out.println("| 4. Excluir Cliente   |");
+            System.out.println("| 0. Sair              |");
+            System.out.println("|----------------------|");
+            System.out.print("|Escolha uma opção:    |");
+
 
             escolha = scanner.nextInt();
             scanner.nextLine();
@@ -63,26 +68,44 @@ public class Menu {
                 excluirCliente();
                 break;
             case 0:
-                System.out.println("Finalizando o programa. Até mais!");
+                System.out.println("");
+                System.out.println("|=================================|");
+                System.out.println("|Finalizando o programa. Até mais!|");
+                System.out.println("|=================================|");
                 break;
             default:
-                System.out.println("Opção inválida. Tente novamente.");
+                System.out.println("");
+                System.out.println("|================================|");
+                System.out.println("|Opção inválida. Tente novamente.|");
+                System.out.println("|================================|");
         }
     }
 
     private void adicionarCliente() {
         try {
-            System.out.print("Nome do cliente: ");
+            System.out.println("");
+            System.out.println("|===========================|");
+            System.out.println("|==    Nome do cliente    ==|");
+            System.out.println("|===========================|");
             String nome = scanner.nextLine();
 
-            System.out.print("CPF do Cliente: ");
+            System.out.println("");
+            System.out.println("|===========================|");
+            System.out.println("|====  CPF do Cliente  ==== |");
+            System.out.println("|===========================|");
             String cpf = scanner.nextLine();
 
             ClientRecordDto clientRecordDto = new ClientRecordDto(nome, cpf);
             clientController.saveClient(clientRecordDto);
-            System.out.println("Cliente adicionado com sucesso!");
+            System.out.println("");
+            System.out.println("=====================================");
+            System.out.println("=| Cliente adicionado com sucesso! |=");
+            System.out.println("=====================================");
         } catch (InputMismatchException e) {
-            System.out.println("Erro de entrada: Insira um CPF válido.");
+            System.out.println("");
+            System.out.println("||######################################||");
+            System.out.println("||Erro de entrada: Insira um CPF válido.||");
+            System.out.println("||######################################||");
             scanner.nextLine();
         }
     }
@@ -94,36 +117,59 @@ public class Menu {
             List<ClientModel> clients = responseEntity.getBody();
 
             for (ClientModel client : clients) {
+                System.out.println("___________________________________________________________________________________________________");
                 System.out.println("ID: " + client.getIdClient() + ", Nome: " + client.getName() + ", CPF: " + client.getCpf());
+                System.out.println("___________________________________________________________________________________________________");
             }
         } else {
+            System.out.println("");
+            System.out.println("____________________________________________________________________________");
             System.out.println("Erro ao obter a lista de clientes. Status: " + responseEntity.getStatusCode());
+            System.out.println("____________________________________________________________________________");
         }
     }
 
     private void atualizarCliente() {
-        System.out.print("ID do cliente a ser atualizado: ");
+        System.out.println("");
+        System.out.println("|====================================|");
+        System.out.println("|== ID do cliente a ser atualizado ==|");
+        System.out.println("|====================================|");
         UUID id = UUID.fromString(scanner.nextLine());
 
-        System.out.print("Novo nome do cliente: ");
+        System.out.println("");
+        System.out.println("|===================================|");
+        System.out.println("|=====  Novo nome do cliente   =====|");
+        System.out.println("|===================================|");
         String novoNome = scanner.nextLine();
 
-        System.out.print("Novo CPF do cliente: ");
+        System.out.println("");
+        System.out.println("|===================================|");
+        System.out.println("|======  Novo CPF do cliente  ======|");
+        System.out.println("|===================================|");
         String novoCpf = scanner.nextLine();
 
         ClientRecordDto novoClientDto = new ClientRecordDto(novoNome, novoCpf);
         clientController.updateClient(id, novoClientDto);
 
-        System.out.println("Cliente atualizado com sucesso!");
+        System.out.println("");
+        System.out.println("|===================================|");
+        System.out.println("|= Cliente atualizado com sucesso! =|");
+        System.out.println("|===================================|");
     }
 
     private void excluirCliente() {
-        System.out.print("ID do cliente a ser excluído: ");
+        System.out.println("");
+        System.out.println("|========================================|");
+        System.out.println("|===== ID do cliente a ser excluído =====|");
+        System.out.println("|========================================|");
         UUID id = UUID.fromString(scanner.nextLine());
 
         clientController.deleteClient(id);
 
-        System.out.println("Cliente excluído com sucesso!");
+        System.out.println("");
+        System.out.println("===================================");
+        System.out.println("=| Cliente excluído com sucesso! |=");
+        System.out.println("===================================");
     }
 }
 
